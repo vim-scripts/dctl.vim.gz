@@ -1,0 +1,2043 @@
+
+" Vim dictionary file
+
+" Language:	DesignCompiler/TCL
+" Maintainer:	Paul Zimmer <paulzimmer@zimmerdesignservices.com>
+" Original:	Paul Zimmer <paulzimmer@zimmerdesignservices.com>
+" Version:	6.22 (synched to tcl.vim v6.1), Sun Jul  2 21:37:35 CDT 2006
+"
+"
+
+  Summary 
+The 
+This 
+_generate_def_comp_href 
+access_internal_pins 
+acs_area_report_suffix 
+acs_budgeted_cstr_suffix 
+acs_check_directories   -verbose
+acs_compile_design   -prepare_only -update_source -dc -destination -force -update
+acs_compile_script_suffix 
+acs_constraint_file_suffix 
+acs_create_directories 
+acs_cstr_report_suffix 
+acs_customize_directory_structure   -type
+acs_db_suffix 
+acs_get_parent_partition   -list -hierarchy
+acs_get_path   -name -pass -file_type -relative -append -mode
+acs_global_user_compile_strategy_script 
+acs_log_file_suffix 
+acs_makefile_name 
+acs_merge_design   -mapped -unmapped -type -auto_update -reference -destination -update
+acs_override_script_suffix 
+acs_qor_report_suffix 
+acs_read_hdl   -recurse -exclude_list -format -no_dependency_check -hdl_source -auto_update -verbose -no_elaborate -destination -library -update
+acs_recompile_design   -source -budget_source -prepare_only -update_source -dc -destination -force -update
+acs_refine_design   -source -prepare_only -update_source -dc -destination -force -update
+acs_remove_dont_touch   -force
+acs_report_attribute   -partitions
+acs_report_directories   -file_types
+acs_report_user_messages   -reset -infos -total -warnings -errors
+acs_reset_directory_structure 
+acs_set_attribute   -partitions
+acs_submit   -command -show -host -exec
+acs_submit_large   -command -show -partitions -host -exec
+acs_timing_report_suffix 
+acs_user_compile_strategy_script_suffix 
+acs_work_dir 
+acs_write_html   -acs_work_dir -destination
+add_module   -permanent -no_warnings -overwrite -force
+add_to_collection   -unique
+add_to_rp_group  -column -row -pin_align_name -orientation -leaf -hierarchy -keepout -instance -width -height -soft -hard
+after 
+alias 
+all_clocks 
+all_clocks() 
+all_cluster_cells  -hierarchy
+all_clusters  -cluster -leaf
+all_connected   -leaf
+all_critical_cells   -slack_range
+all_critical_pins   -slack_range -type
+all_designs 
+all_dont_touch  -nets -cells
+all_drc_violated_nets   -max_fanout -bound -max_capacitance -max_transition -threshold
+all_fanin   -flat -only_cells -levels -exclude_bboxes -to -startpoints_only -break_on_bboxes
+all_fanout   -flat -only_cells -levels -exclude_bboxes -from -endpoints_only -clock_tree -break_on_bboxes
+all_high_fanout   -nets -threshold
+all_ideal_nets 
+all_inputs   -level_sensitive -edge_triggered -clock
+all_macro_cells 
+all_objects_in_bounding_box  -cells -nets -coordinates
+all_outputs   -level_sensitive -edge_triggered -clock
+all_registers   -level_sensitive -data_pins -master_slave -clock_pins -slave_clock_pins -cells -no_hierarchy -edge_triggered -clock -output_pins -inverted_output
+all_rp_groups 
+all_rp_hierarchicals 
+all_rp_inclusions 
+all_rp_instantiations 
+all_rp_references  -design
+all_threestate   -nets
+all_tieoff_cells 
+allocate_partition_budgets  -generate_script_only  -min_input_to_register -source -format -transcript_exec -remove -effort -absolute_paths -min_input_to_output -overconstrain -no_environment -min_register_to_output -budget_shell -destination -interblock_logic
+allow_input_delay_min_greater_than_max 
+analyze   -format -create_update -work -schedule -define -library -update
+append 
+append_to_collection   -unique
+apropos   -symbols_only
+arch 
+arg1 
+atpg_bidirect_output_only 
+atpg_test_asynchronous_pins 
+attach_bounds  -name
+attach_regions  -name
+attach_voltage_areas  -name
+auto_execok 
+auto_link_disable 
+auto_link_options 
+auto_ungroup_preserve_constraints 
+auto_wire_load_selection 
+balance_buffer   -to -net -from -prefer -force -library
+balance_registers 
+bc_allow_shared_memories 
+bc_chain_read_into_mem 
+bc_chain_read_into_oper 
+bc_check_design  -io_mode -constraints
+bc_constrain_signal_memories 
+bc_detect_memory_accesses 
+bc_dont_register_input_port 
+bc_dont_ungroup  -register -fsm -random_logic -prio_logic -array_logic
+bc_enable_chaining 
+bc_enable_multi_cycle 
+bc_enable_speculative_execution 
+bc_estimate_mux_input 
+bc_estimate_timing_effort 
+bc_fsm_coding_style 
+bc_group_process  -with_memory
+bc_margin  -process -global -reg -fsm -mux -preferred_FF -report_FF
+bc_report_arrays  -conflicting -non_conflicting
+bc_report_filter 
+bc_report_memories  -synthetic_libraries -bindings -used_memories -conflicting -non_conflicting
+bc_set_implementation  -module -implementation -show_current -list_valid -default
+bc_time_all_sequential_op_bindings 
+bc_time_design  -force -fastest -cache_preserved_functions -except -use_cached_preserved_functions -recompile
+bgerror 
+bin_path 
+binary 
+break 
+bsd_max_in_switching_limit 
+bsd_max_out_switching_limit 
+bsd_physical_effort 
+bus_dimension_separator_style 
+bus_extraction_style 
+bus_inference_descending_sort 
+bus_inference_style 
+bus_minus_style 
+bus_multiple_separator_style 
+bus_naming_style 
+bus_range_separator_style 
+cache_dir_chmod_octal 
+cache_file_chmod_octal 
+cache_read 
+cache_read_info 
+cache_write 
+cache_write_info 
+calculate_rtl_load   -delay -capacitance
+case_analysis_large_cell_pin_cnt 
+case_analysis_log_file 
+case_analysis_with_logic_constants 
+catch 
+ccl_enable_always 
+cd 
+cell_of 
+chain_operations  -process
+change_link   -all_instances
+change_names   -restore -dont_touch -log_changes -names_file -rules -verbose -hierarchy
+change_names_dont_change_bus_members 
+change_names_update_inst_tree 
+change_selection  -name -replace -add -remove -toggle -type
+characterize  -connections  -no_timing -power -verbose -constraints
+check_bindings   -pin_widths -bindings
+check_bsd   -effort -infer_instructions -verbose
+check_budget   -to -from -no_environment -tolerance -verbose -no_interblock_logic
+check_connection_rules  -summary -always_on -pass_gate
+check_constraints  -check_critical_paths
+check_design   -multiple_designs -post_layout -no_warnings -summary -one_level -only_post_layout
+check_dft   -check_float -overwrite_model -verbose -check_contention
+check_error   -reset -verbose
+check_error_list 
+check_implementations   -implementations -parameters
+check_isolation_cells  -outside -inside  -output -input
+check_level_shifters   -verbose
+check_license 
+check_mpc  -macros -ports -conflicting -verbose
+check_scan   -check_float -overwrite_model -verbose -check_contention
+check_script 
+check_synlib 
+check_target_library_subset 
+check_test   -check_float -overwrite_model -verbose -check_contention
+check_timing   -overlap_tolerance -multiple_clock
+check_unmapped 
+clean_buffer_tree   -global -to -net -from -threshold -hierarchy
+clock 
+close 
+collection_result_display_limit 
+combo_itf_library 
+command_log_file 
+company 
+compare_collections   -order_dependent
+compare_delay_calculation   -verbose
+compare_fsm 
+compare_lib 
+compatibility_version 
+compile   -incremental_mapping -no_design_rule -leakage_mode -no_map -only_hold_time -auto_ungroup -area_effort -xterm -top -only_design_rule -map_effort -background -scan -boundary_optimization -arch -host -ungroup_all -exact_map
+compile_assume_fully_decoded_three_state_busses 
+compile_auto_ungroup_area_num_cells 
+compile_auto_ungroup_count_leaf_cells 
+compile_auto_ungroup_delay_num_cells 
+compile_auto_ungroup_override_wlm 
+compile_checkpoint_cpu_interval 
+compile_checkpoint_filename 
+compile_checkpoint_phases 
+compile_checkpoint_pre_area_filename 
+compile_checkpoint_pre_delay_filename 
+compile_checkpoint_pre_drc1_filename 
+compile_checkpoint_pre_drc2_filename 
+compile_cpu_limit 
+compile_create_mux_op_hierarchy 
+compile_create_wire_load_table 
+compile_dcl_performance_mode 
+compile_delete_unloaded_sequential_cells 
+compile_disable_hierarchical_inverter_opt 
+compile_dont_touch_annotated_cell_during_inplace_opt 
+compile_dont_use_dedicated_scanout 
+compile_dw_simple_mode 
+compile_fix_cell_degradation 
+compile_hold_reduce_cell_count 
+compile_implementation_selection 
+compile_instance_name_prefix 
+compile_instance_name_suffix 
+compile_log_format 
+compile_mux_no_boundary_optimization 
+compile_mux_optimization 
+compile_negative_logic_methodology 
+compile_new_boolean_structure 
+compile_no_new_cells_at_top_level 
+compile_partitions   -destination
+compile_power_opto_only 
+compile_preserve_subdesign_interfaces 
+compile_preserved_functions  -exclude -no_compile -compile_effort -include_script -write -filename -design_library -force_recompile -stages -clock_port_name -output_delay -input_delay -sync_reset -async_reset -reset_polarity
+compile_report_dp 
+compile_retime_license_behavior 
+compile_seqmap_no_scan_cell 
+compile_seqmap_propagate_constants 
+compile_sequential_area_recovery_old 
+compile_simple_mode_block_effort 
+compile_slack_driven_buffering 
+compile_ultra   -no_auto_ungroup -no_uniquify -scan -no_boundary_optimization -exact_map
+compile_ultra_ungroup_dw 
+compile_update_annotated_delays_during_inplace_opt 
+compile_use_fast_delay_mode 
+compile_use_low_timing_effort 
+concat 
+connect_net 
+context_check 
+context_check_status 
+continue 
+convert_placement_keepout  -soft_to_hard -hard_to_soft
+copy_collection 
+copy_design 
+create_bsd_patterns   -effort -type -output -stil
+create_bus   -sort -no_sort -start -end -type
+create_cache   -implementation -operating_condition -parameters -wire_load -module -report
+create_cell   -logic -only_physical
+create_clock   -waveform -name -add -period
+create_clock_no_input_delay 
+create_cluster  -name -parent -multibits -keep
+create_command_group 
+create_design 
+create_dft_model   -design -parameters -family
+create_generated_clock   -source -master_clock -multiply_by -name -invert -add -edge_shift -duty_cycle -edges -divide_by
+create_ilm   -instances -keep_boundary_cells -keep_parasitics -extract_only -include_side_load -ignore_ports -traverse_disabled_arcs -auto_ignore -keep_full_clock_tree -verbose -latch_level -keep_macros -physical -identify_only
+create_mbist_standalone   -design -memory_ref
+create_multibit   -sort -no_sort -name
+create_mw_design  -min_tluplus  -tech_pdb -min_phys -tf2itf_map -max_phys -max_tluplus -dont_convert_tech_pdb -tech_file -tech_source -nom_tluplus
+create_net 
+create_operating_conditions   -tree_type -rail_voltages -name -parameter1 -parameter2 -parameter3 -parameter4 -parameter5 -temperature -calc_mode -voltage -process -library
+create_pass_directories 
+create_placement_keepouts  -name -coordinate -type
+create_port   -direction
+create_rp_group  -design -columns -rows -alignment -pin_align_name -utilization -ignore -x_offset -y_offset
+create_schematic  -hierarchy -size -portrait -fill_percent -outputs_attract -order_outputs -sort_outputs -dont_left_justify_inputs -schematic_view -symbol_view -hier_view -no_bus -bit_mappers -implicit -no_rippers -sge -no_type_mappers -reference -gen_database
+create_test_clock   -hookup -waveform -period -mbist_clock -internal_clocks
+create_test_patterns  -input -output -backtrack_effort -check_contention -check_float -compaction_effort -dft -no_compaction -max_cpu_per_fault -max_total_cpu -max_random_patterns -random_pattern_failure_limit -sample -background -host -arch -xterm
+create_test_protocol   -test_mode -infer_clock -infer_asynch
+create_test_schedule 
+create_wire_load  -design -cell -hierarchy -mode -this_level_nets_only -name -cluster -output -update_lib -write_script -statistics -dont_smooth -trim -percentile -total_area
+create_wiring_keepouts  -name -layer -coordinate
+cts_cell_costing 
+cts_num_path_for_cell_costing 
+cts_root_can_be_moved 
+cts_use_cost_groups 
+current_design 
+current_design_name 
+current_instance 
+current_test_mode 
+de_rp_groups  -group_name -output -append -nosplit -apply
+date 
+db_load_ccs_data 
+dc_allocate_budgets   -min_input_to_register -levels -format -min_input_to_output -min_register_to_output -no_interblock_logic -separator -write_script -file_format_spec -budget_design_ware -mode
+dc_shell_mode 
+ddc_allow_unknown_packed_commands 
+ddc_verbose 
+debug_script 
+default_input_delay 
+default_name_rules 
+default_output_delay 
+default_port_connection_class 
+default_schematic_options 
+define_design_lib   -path
+define_dft_design   -test_model -interface -design_name -params -type
+define_mbist_program   -format -name -pattern -type -algorithm_name -background_name -model -background_type
+define_name_rules  -remove_chars  -replacement_char -reserved_words -remove_irregular_port_bus -reset -remove_irregular_net_bus -restricted -rename_three_state_port_net -first_restricted -check_bus_indexing -remove_port_bus -dont_change_ports -flatten_multi_dimension_busses -dummy_net_prefix -dir_inout_as_in -equal_ports_nets -inout_ports_equal_nets -type -case_insensitive -special -max_length -check_internal_net_name -add_dummy_nets -target_bus_naming_style -collapse_name_space -last_restricted -dont_change_bus_members -check_bus_indexing_use_type_info -remove_internal_net_bus -map -prefix -allowed
+define_proc_attributes  -hidden  -permanent -dont_abbrev -command_group -define_args -info -hide_body
+define_test_mode   -view -existing -inherit -type -spec
+define_user_attribute  -type -classes -range_min -range_max -one_of -import
+delete_operating_conditions   -name -library
+derive_clocks 
+derive_constraints   -attributes_only -budget -verbose
+derive_net_routing_layer_constraints 
+derive_timing_constraints  -min_delay  -no_max_period -max_delay_scale -period_scale -separate_rise_and_fall -min_delay_scale -fix_hold -no_max_delay
+derive_voltage_areas  -guard_band_x -guard_band_y
+design_library_file 
+designer 
+detach_bounds  -name
+detach_region  -name
+detach_voltage_area  -name
+dft_drc   -sample -infer_scan_structures -verbose -coverage_estimate -pre_dft
+disable_auto_time_borrow 
+disable_case_analysis 
+disable_library_transition_degradation 
+disable_mdb_stop_points 
+disconnect_net   -all
+disconnect_scan_chains 
+do_operand_isolation 
+dont_bind_unused_pins_to_logic_constant 
+dont_chain_operations  -process -into -from
+dpcm_arc_sense_mapping 
+dpcm_debuglevel 
+dpcm_functionscope 
+dpcm_level 
+dpcm_libraries 
+dpcm_rulepath 
+dpcm_rulespath 
+dpcm_slewlimit 
+dpcm_tablepath 
+dpcm_temperaturescope 
+dpcm_version 
+dpcm_voltagescope 
+dpcm_wireloadscope 
+dps_create_keepout_for_fixed_cells 
+dps_distributed_licensing 
+dps_grd_arch 
+dps_grd_args 
+dps_grd_path 
+dps_host_setup 
+dps_hosts 
+dps_lsf_arch 
+dps_lsf_args 
+dps_lsf_path 
+dps_merge_grd_arch 
+dps_merge_grd_args 
+dps_merge_lsf_arch 
+dps_merge_lsf_args 
+dps_remove_module  -all
+dps_script_auto_link_disable 
+dps_top_grd_arch 
+dps_top_grd_args 
+dps_top_lsf_arch 
+dps_top_lsf_args 
+dps_work_dir 
+dremove_dft_design  -design_name -type -all
+drive_of   -min -piece -fall -wire_drive -rise
+duplicate_ports 
+echo   -n
+echo_include_commands 
+eco_align_design  -out
+eco_analyze_design 
+eco_current_design_pair  -design_type
+eco_implement  -post_tapeout
+eco_netlist_diff 
+eco_recycle  -post_tapeout -respect_physical_hier -respect_distance
+eco_report_cell  -verbose
+eco_reset_directives  -all -single
+edifin_autoconnect_offpageconnectors 
+edifin_autoconnect_ports 
+edifin_dc_script_flag 
+edifin_delete_empty_cells 
+edifin_delete_ripper_cells 
+edifin_ground_net_name 
+edifin_ground_net_property_name 
+edifin_ground_net_property_value 
+edifin_ground_port_name 
+edifin_instance_property_name 
+edifin_lib_in_osc_symbol 
+edifin_lib_in_port_symbol 
+edifin_lib_inout_osc_symbol 
+edifin_lib_inout_port_symbol 
+edifin_lib_logic_0_symbol 
+edifin_lib_logic_1_symbol 
+edifin_lib_mentor_netcon_symbol 
+edifin_lib_out_osc_symbol 
+edifin_lib_out_port_symbol 
+edifin_lib_ripper_bits_property 
+edifin_lib_ripper_bus_end 
+edifin_lib_ripper_cell_name 
+edifin_lib_ripper_view_name 
+edifin_lib_route_grid 
+edifin_lib_templates 
+edifin_portinstance_disabled_property_name 
+edifin_portinstance_disabled_property_value 
+edifin_portinstance_property_name 
+edifin_power_net_name 
+edifin_power_net_property_name 
+edifin_power_net_property_value 
+edifin_power_port_name 
+edifin_use_identifier_in_rename 
+edifin_view_identifier_property_name 
+edifout_dc_script_flag 
+edifout_design_name 
+edifout_designs_library_name 
+edifout_display_instance_names 
+edifout_display_net_names 
+edifout_external 
+edifout_external_graphic_view_name 
+edifout_external_netlist_view_name 
+edifout_external_schematic_view_name 
+edifout_ground_name 
+edifout_ground_net_name 
+edifout_ground_net_property_name 
+edifout_ground_net_property_value 
+edifout_ground_pin_name 
+edifout_ground_port_name 
+edifout_instance_property_name 
+edifout_instantiate_ports 
+edifout_library_graphic_view_name 
+edifout_library_netlist_view_name 
+edifout_library_schematic_view_name 
+edifout_merge_libraries 
+edifout_multidimension_arrays 
+edifout_name_oscs_different_from_ports 
+edifout_name_rippers_same_as_wires 
+edifout_netlist_only 
+edifout_no_array 
+edifout_numerical_array_members 
+edifout_pin_direction_in_value 
+edifout_pin_direction_inout_value 
+edifout_pin_direction_out_value 
+edifout_pin_direction_property_name 
+edifout_pin_name_property_name 
+edifout_portinstance_disabled_property_name 
+edifout_portinstance_disabled_property_value 
+edifout_portinstance_property_name 
+edifout_power_and_ground_representation 
+edifout_power_name 
+edifout_power_net_name 
+edifout_power_net_property_name 
+edifout_power_net_property_value 
+edifout_power_pin_name 
+edifout_power_port_name 
+edifout_skip_port_implementations 
+edifout_target_system 
+edifout_top_level_symbol 
+edifout_translate_origin 
+edifout_unused_property_value 
+edifout_write_attributes 
+edifout_write_constraints 
+edifout_write_design_name 
+edifout_write_properties_list 
+elaborate   -architecture -file_parameters -work -parameters -schedule -gate_clock -library -update
+else 
+elseif 
+enable_instances_in_report_net 
+enable_page_mode 
+enable_recovery_removal_arcs 
+enable_slew_degradation 
+enable_verilog_netlist_reader 
+encoding 
+encrypt_lib   -output
+enter_visual_mode 
+eof 
+equationout_and_sign 
+equationout_or_sign 
+equationout_postfix_negation 
+error 
+error_info 
+estimate_io_latency 
+estimate_physical  -quick -placement_only -check_only
+estimate_test_coverage  -sample
+eval 
+exec 
+exit 
+exit_delete_command_log_file 
+exit_delete_filename_log_file 
+exit_visual_mode 
+expr 
+externalize_cell 
+extract  -minimize -reachable
+extract_ilm   -include_side_load -verbose -ilm_core -physical -optimizable
+extract_rp_group  -group_name -rows -columns -output -append -decending -physical -nosplit -apply -objects -coordinates
+fblocked 
+fconfigure 
+fcopy 
+file 
+fileevent 
+filename_log_file 
+filter  -regexp  -nocase -dont_check_real_objects
+filter_collection  -regexp  -nocase
+find   -flat -hierarchy
+find_allow_only_non_hier_ports 
+find_converts_name_lists 
+find_ignore_case 
+fix_routing_fat_contacts  -dir -0.75in
+flush 
+for 
+foreach 
+foreach_in_collection 
+format 
+found_arch_apollo 
+found_x11_vendor_string_apollo 
+fpga_addsub_map_to_dsp 
+fpga_auto_ungroup_num_cells 
+fpga_block_rom_max_addr_width 
+fpga_block_rom_min_addr_width 
+fpga_block_rom_min_total_bits 
+fpga_boundary_optimization 
+fpga_buffer_clk_min_fanout 
+fpga_compile_cpu_limit 
+fpga_compile_force_ungroup_num_cells 
+fpga_duplicate_iob_registers 
+fpga_enable_mega_func_timing 
+fpga_enable_merge_register 
+fpga_fast_seqmap 
+fpga_feed_through_opt 
+fpga_infer_distributed_rom 
+fpga_iob_mapping 
+fpga_map_wide_gates 
+fpga_patch_luts 
+fpga_pre_auto_ungroup 
+fpga_prefer_tmg 
+fpga_seq_const_prop 
+fpga_seq_inverter_move_back 
+fpga_seq_inverter_move_back_with_reg_dup 
+fsm_auto_inferring 
+fsm_enable_state_minimization 
+fsm_export_formality_state_info 
+gen_bussing_exact_implicit 
+gen_cell_pin_name_separator 
+gen_create_netlist_busses 
+gen_dont_show_single_bit_busses 
+gen_match_ripper_wire_widths 
+gen_max_compound_name_length 
+gen_max_ports_on_symbol_side 
+gen_open_name_postfix 
+gen_open_name_prefix 
+gen_show_created_busses 
+gen_show_created_symbols 
+gen_single_osc_per_name 
+generic_symbol_library 
+get_attribute   -quiet -bus
+get_cells  -regexp  -quiet -hierarchical -nocase -filter -of_objects -exact
+get_clocks  -regexp  -quiet -hierarchical -nocase -filter -exact
+get_clusters  -regexp  -flat -quiet -hierarchical -hier -nocase -filter -of_objects -exact
+get_design_lib_path 
+get_design_parameter  -quiet
+get_designs  -regexp  -quiet -hierarchical -nocase -filter -exact
+get_drc_violated_nets  -max_capacitance -max_fanout -max_transition -min_delay
+get_generated_clocks  -regexp  -quiet -nocase -filter -exact
+get_gui_stroke_bindings  -dictionary -builtin
+get_ilm_objects   -type
+get_ilms  -regexp  -quiet -nocase -filter -reference -exact
+get_lib_attribute 
+get_lib_cells  -regexp  -quiet -nocase -filter -of_objects -exact
+get_lib_pins  -regexp  -quiet -nocase -filter -of_objects -exact
+get_libs  -regexp  -quiet -nocase -filter -of_objects -exact
+get_license 
+get_message_info   -occurrences -limit -warning_count -suppressed -info_count -error_count
+get_multibits  -regexp  -quiet -hierarchical -nocase -filter -exact
+get_nets  -regexp  -quiet -hierarchical -nocase -filter -of_objects -exact
+get_object_name 
+get_path_groups  -regexp  -quiet -nocase -filter -exact
+get_pins  -regexp  -quiet -hierarchical -nocase -filter -of_objects -leaf -exact
+get_pnet 
+get_ports  -regexp  -quiet -hierarchical -nocase -filter -of_objects -exact
+get_power_domains  -filter -quiet -regexp -nocase
+get_references  -regexp  -quiet -hierarchical -nocase -filter -exact
+get_rp_groups  -hierarchical -filter -quiet -regexp -nocase -exact
+get_scan_cells_of_chain   -test_mode -chain
+get_scan_chains   -test_mode
+get_scan_chains_by_name  -test_mode
+get_selection  -slct_targets -slct_targets_operation -create_slct_buses -name -type -design -more_than -fewer_than -count -num
+get_special_collection  -tristate_nets -ideal_nets -high_fanout_nets -threshold -dont_touch_nets -fixed_cells -physical_only_cells -tie_off_cells -spare_cells -physical_only_nets
+get_timing_paths   -nworst -true -to -through -enable_preset_clear_arcs -from -include_hierarchical_pins -path_type -lesser -greater -group -max_paths -slack_greater_than -true_threshold -slack_lesser_than -delay_type
+get_unix_variable 
+getenv 
+gets 
+gets_dialog  -title -default
+glob 
+global 
+group   -logic -fsm -hdl_bussed -pla -soft -design_name -hdl_block -cell_name -except -hdl_all_blocks
+group_path   -to -default -through -from -name -weight -critical_range
+group_variable 
+gui_add_annotation  -window -group -type -text -color -width -pattern
+gui_add_menu  -menu -tcl_cmd -separator -enable_cmd -get_state_cmd -icon_file -hot_key -tooltip -help_string -anchor_item -anchor_offset -position -menu_root
+gui_add_ruler_point  -window
+gui_add_toolbar_item  -toolbar -item -separator
+gui_bin  -clct -attr -cmd -lower_bound -lower_bound_strict -upper_bound -upper_bound_strict -boundary -num_bins -bin_range -underflow -overflow -nice_level -small_is_good -exact_binning -ignore_values
+gui_create_attrdef  -class -name -get_value_cmd -set_value_cmd -type -format -display_name -subtype -width -show -hide -show_infotip -hide_infotip
+gui_create_attrgroup  -class -name -model_kind -default -attr_list
+gui_create_pref_category  -category
+gui_create_pref_key  -key -value_type -value -category
+gui_create_schematic  -hierarchy -no_bus -symbol_view -reference -schematic_view
+gui_create_toolbar  -name -title -dock_side -hidden -window_type
+gui_create_var  -name -value -value_type -keep_value_if_exist -read_only
+gui_create_vm  -name -update_cmd -tag -title -infotip
+gui_create_vmbucket  -vmname -name -infotip -color -pattern -visible -title -collection -above -below -at
+gui_delete_attrdef  -class -name -all
+gui_delete_attrgroup  -class -name -model_kind -default -all
+gui_eval_cmd  -cmd -log -no_log -history -no_history -display| -no_display -exec_callbacks -no_exec_callbacks
+gui_exist_pref_category  -category
+gui_exist_pref_key  -key -category
+gui_exist_var  -name
+gui_get_attribute  -default
+gui_get_pref_categories 
+gui_get_pref_keys  -category
+gui_get_pref_value  -key -category
+gui_get_pref_value_type  -key -category
+gui_get_region 
+gui_get_toolbar_names 
+gui_get_var  -name
+gui_get_vm  -name -buckets -tag -title -infotip -discrete
+gui_get_vmbucket  -vmname -name -infotip -netfilter -color -pattern -visible -title -collection
+gui_hide_toolbar  -name
+gui_list_attrdefs  -class -name -all -tcl -full
+gui_list_attrgroup  -class -name -model_kind -default -all -tcl -full -attr_list
+gui_list_vm 
+gui_log_cmd  -cmd -comment -no_comment -suppress_newline -no_suppress_newline
+gui_new_ruler  -window
+gui_remove_all_annotations  -window
+gui_remove_all_rulers  -window
+gui_remove_pref_key  -key -category
+gui_remove_toolbar  -name
+gui_remove_toolbar_item  -toolbar -item -separator
+gui_remove_var  -name
+gui_remove_vm  -name
+gui_remove_vmbucket  -vmname -name -all
+gui_select_vmbucket  -vmname -name -replace -add -remove
+gui_set_attribute 
+gui_set_layout_visual_mode  -mode -window -no_update
+gui_set_pref_value  -key -value -category
+gui_set_region 
+gui_set_var  -name -value
+gui_set_vm  -name -update_cmd -tag -title -infotip -buckets
+gui_set_vmbucket  -vmname -name -infotip -color -pattern -visible -title -collection -above -below -at
+gui_show_man_page  -apropos
+gui_show_toolbar  -name
+gui_update_attrdef  -class -name -get_value_cmd -set_value_cmd -type -format -display_name -subtype -width -show -hide -show_infotip -hide_infotip
+gui_update_attrgroup  -class -name -model_kind -default -attr_list -add -delete -move -attr -anchor
+gui_update_pref_file  -file
+gui_update_vm  -name
+gui_view_port_history  -window -next -previous -add -to -list_names -rect -delete_name -isprevious -isnext -dialog -tcl_list -help_cmd
+gui_zoom  -window -full -fit -rect -factor -clct -zoom_in_mode -zoom_out_mode -select_mode
+hdl_keep_licenses 
+hdl_naming_threshold 
+hdl_preferred_license 
+hdlin_advisor_directory 
+hdlin_allow_4state_parameters 
+hdlin_array_instance_naming_style 
+hdlin_auto_full_case 
+hdlin_auto_netlist_reader 
+hdlin_auto_parallel_case_early 
+hdlin_auto_save_templates 
+hdlin_bdd_depth_limit 
+hdlin_bdd_memory_limit 
+hdlin_black_box_pin_hdlc_style 
+hdlin_build_selectop_for_var_index 
+hdlin_call_stack_depth 
+hdlin_check_no_latch 
+hdlin_check_user_full_case 
+hdlin_check_user_parallel_case 
+hdlin_compare_const_with_gates 
+hdlin_compare_eq_with_gates 
+hdlin_decoder_max_input_width 
+hdlin_decoder_min_input_width 
+hdlin_decoder_min_use_percentage 
+hdlin_dont_check_param_width 
+hdlin_dont_infer_mux_for_resource_sharing 
+hdlin_enable_analysis_info 
+hdlin_enable_analysis_info_for_analyze 
+hdlin_enable_presto 
+hdlin_enable_presto_for_vhdl 
+hdlin_enable_rtldrc_info 
+hdlin_enable_vpp 
+hdlin_escape_special_names 
+hdlin_ff_always_async_set_reset 
+hdlin_ff_always_sync_set_reset 
+hdlin_fsm_encoding_threshold 
+hdlin_fsm_subset_level 
+hdlin_generate_naming_style 
+hdlin_generate_separator_style 
+hdlin_group_selectors 
+hdlin_hide_resource_line_numbers 
+hdlin_infer_block_local_latches 
+hdlin_infer_comparators 
+hdlin_infer_complex_enable 
+hdlin_infer_complex_set_reset 
+hdlin_infer_counter 
+hdlin_infer_enumerated_types 
+hdlin_infer_fsm 
+hdlin_infer_function_local_latches 
+hdlin_infer_multibit 
+hdlin_infer_mux 
+hdlin_infer_ram 
+hdlin_keep_feedback 
+hdlin_keep_inv_feedback 
+hdlin_keep_signal_name 
+hdlin_latch_always_async_set_reset 
+hdlin_link_design 
+hdlin_loop_invariant_code_motion 
+hdlin_map_to_entity 
+hdlin_map_to_module 
+hdlin_map_to_operator 
+hdlin_merge_nested_conditional_statements 
+hdlin_module_arch_name_splitting 
+hdlin_mux_oversize_ratio 
+hdlin_mux_size_limit 
+hdlin_mux_size_min 
+hdlin_netlist_transform 
+hdlin_no_adder_feedthroughs 
+hdlin_no_group_register 
+hdlin_no_sequential_mapping 
+hdlin_one_hot_one_cold_on 
+hdlin_optimize_array_references 
+hdlin_optimize_case_default 
+hdlin_optimize_enum_types 
+hdlin_optimize_shift_expressions 
+hdlin_optimize_slice_op 
+hdlin_out_of_bounds_error_level 
+hdlin_pla_mode 
+hdlin_preserve_sequential 
+hdlin_preserve_sequential_loop_variables 
+hdlin_preserve_vpp_files 
+hdlin_presto_cell_name_prefix 
+hdlin_presto_net_name_prefix 
+hdlin_print_modfiles 
+hdlin_ram_min_address_width 
+hdlin_ram_min_total_bits 
+hdlin_redundancy_elimination 
+hdlin_reg_report_length 
+hdlin_register_report_depth 
+hdlin_replace_synthetic 
+hdlin_report_carry_in 
+hdlin_report_case_analysis 
+hdlin_report_enumerated_types 
+hdlin_report_floating_net_to_ground 
+hdlin_report_fsm 
+hdlin_report_inferred_modules 
+hdlin_report_mux_op 
+hdlin_report_syn_cell 
+hdlin_report_tri_state 
+hdlin_selector_simplify_effort 
+hdlin_seqmap_async_search_depth 
+hdlin_seqmap_sync_search_depth 
+hdlin_share_all_operators 
+hdlin_signed_division_use_shift 
+hdlin_subprogram_default_values 
+hdlin_support_subprogram_var_init 
+hdlin_translate_off_on 
+hdlin_translate_off_skip_text 
+hdlin_unsigned_integers 
+hdlin_unsigned_rem 
+hdlin_upcase_names 
+hdlin_use_carry_in 
+hdlin_use_syn_shifter 
+hdlin_verbose_cell_naming 
+hdlin_vhdl_87 
+hdlin_vpp_temporary_directory 
+hdlin_vrlg_generate_std 
+hdlin_vrlg_std 
+hdlin_warn_array_bound 
+hdlin_warn_implicit_wires 
+hdlin_warn_sens_list 
+hdlin_while_loop_iterations 
+hdlin_work_directory 
+hdlin_write_gtech_design_directory 
+hdlout_internal_busses 
+help   -verbose
+hier_dont_trace_ungroup 
+high_fanout_net_pin_capacitance 
+high_fanout_net_threshold 
+highlight_path  -from -critical_path -min -max -min_rise -min_fall -max_rise -max_fall -no_auto_cycle
+history   -h -r
+hlo_datapath_duplicate_cse 
+hlo_disable_datapath_optimization 
+hlo_ignore_priorities 
+hlo_minimize_tree_delay 
+hlo_resource_allocation 
+hlo_resource_implementation 
+hlo_share_common_subexpressions 
+hlo_share_effort 
+hlo_transform_constant_multiplication 
+hookup_power_gating_ports   -default_port_naming_style -port_naming_styles -type -port_naming_style
+hookup_testports   -se_port -se_pin -verbose -tm_pin -tm_port
+identify_clock_gating   -reset -gated_element -ungated_element -gating_element -reset_only -gated_elements -ungated_elements
+identify_interface_logic   -keep_boundary_cells -ignore_ports -auto_ignore -latch_level -keep_macros
+if 
+ignore_array_loop_precedences  -process
+ignore_array_precedences  -process -from_set -to_set
+ignore_memory_loop_precedences  -process
+ignore_memory_precedences  -process -from -to
+ilm_enable_onroute 
+ilm_ignore_percentage 
+incr 
+index_collection 
+infer_test_protocol 
+info -args -body -cmdcount -commands -complete -default -exists -globals -hostname -level -library -loaded -locals -nameofexecutable -patchlevel -procs -script -sharedlibextension -tclversion -vars
+inherit_parent_dont_touch 
+init_path 
+insert_bsd 
+insert_clock_gating   -global -regular_only -no_register_based -no_hier -module_level
+insert_dft   -xterm -rtl -map_effort -background -ignore_compile_design_rules -arch -host -dont_fix_constraint_violations -physical -no_scan
+insert_level_shifters   -preserve -clock_net -verbose -all_clock_nets
+insert_pads  -verify -verify_hierarchically -verify_effort -thru_hierarchy -respect_hierarchy
+insert_scan   -xterm -map_effort -background -ignore_compile_design_rules -arch -host -dont_fix_constraint_violations -physical
+insert_test_design_naming_style 
+interp 
+is_false 
+is_true 
+join 
+lappend 
+lbo_cells_in_regions 
+lib2saif   -lib_pathname -output
+lib_thresholds_per_lib 
+lib_use_thresholds_per_pin 
+libgen_max_differences 
+library_analysis 
+license_users 
+lindex 
+link   -all
+link_force_case 
+link_library 
+link_path 
+link_physical_library 
+linsert 
+list 
+list_attributes   -application -class
+list_designs   -show_file
+list_duplicate_designs 
+list_files 
+list_gw_preferences 
+list_instances   -max_levels -full -hierarchy
+list_libs 
+list_licenses 
+list_test_models 
+list_test_modes   -existing -spec
+llength 
+lminus   -exact
+load_of 
+lrange 
+lreplace 
+ls 
+lsearch 
+lset 
+lsi_readlef  -no_warnings -lib -trim
+lsiin_net_name_prefix 
+lsiout_inverter_cell 
+lsiout_upcase 
+lsort 
+ltl_obstruction_type 
+man 
+mands 
+mentor_bidirect_value 
+mentor_do_path 
+mentor_input_output_property_name 
+mentor_input_value 
+mentor_logic_one_value 
+mentor_logic_zero_one_property_name 
+mentor_logic_zero_value 
+mentor_output_value 
+mentor_primitive_property_name 
+mentor_primitive_property_value 
+mentor_reference_property_name 
+mentor_search_path 
+mentor_write_symbols 
+merge_clock_gates   -preview -verbose
+merge_saif   -simple_merge -rtl_direct -scale -exclude_absolute -khrate -output -ignore_absolute -input_list -strip_module -unit_base -ignore -instance_name -exclude
+mgi_scratch_directory 
+minimize_fsm 
+mpc_disable_macro_fitting 
+mpc_disable_pad_legalization 
+mpc_dont_cut_pnet_over_macros 
+multi_pass_test_generation 
+mux_auto_inferring_effort 
+mv_timer_is_on 
+mw_cell_name 
+mw_convert_tf 
+mw_create_netlist_from_CEL 
+mw_design_library 
+mw_disable_escape_char 
+mw_enable_net_bus 
+mw_enable_netl_view 
+mw_ground_port 
+mw_logic0_net 
+mw_logic1_net 
+mw_pgconn_cell_inst 
+mw_pgconn_cell_master 
+mw_power_port 
+mw_read_ignore_corner_cell 
+mw_read_ignore_filler_cell 
+mw_read_ignore_pad_cell 
+mw_read_ignore_unconnected_cell 
+mw_reference_library 
+mw_tech_pdb 
+mw_use_pdb_lib_format 
+namespace 
+new_case_analysis_flow 
+new_idn_switch 
+open 
+optimize_bsd   -effort -ignore_compile_design_rules
+optimize_congestion  -effort -coordinate
+optimize_reg_skip_retiming_for_formal_verification 
+optimize_registers   -minimum_period_only -no_incremental_map -edge -no_compile -latch -async_state -period -sync_state -verbose -async_transform -sync_transform -print_critical_loop -no_clock_correction -flatten -clock -check_design
+order_rp_groups  -group_name -output -append -nosplit -apply
+package 
+parent_cluster 
+parse_proc_arguments   -args
+pdefout_diff_original 
+pdefout_full_path_name 
+physical_library 
+physopt_area_critical_range 
+physopt_change_list 
+physopt_check_site_array_overlap 
+physopt_checkpoint_stage 
+physopt_cpu_limit 
+physopt_create_missing_physical_libcells 
+physopt_delete_unloaded_cells 
+physopt_disable_auto_bound_for_gated_clock 
+physopt_dont_error_out_on_conflicting_bounds 
+physopt_enable_extractor_rc 
+physopt_enable_placement_hfs 
+physopt_enable_power_optimization 
+physopt_enable_rp_in_xg_mode 
+physopt_enable_tlu_plus 
+physopt_enable_tlu_plus_process 
+physopt_enable_via_res_support 
+physopt_force_place_all_macros 
+physopt_gated_register_area_multiplier 
+physopt_hard_keepout_distance 
+physopt_hfs_default_reference 
+physopt_hfs_hf_new_port 
+physopt_hfs_hf_threshold 
+physopt_hfs_mf_threshold 
+physopt_hfs_remove_effort 
+physopt_ignore_structure 
+physopt_max_placement_density 
+physopt_mw_checkpoint_filename 
+physopt_new_fix_constants 
+physopt_pin_based_pad 
+physopt_power_critical_range 
+physopt_ref_pdef_loaded 
+physopt_row_overlap_threshold 
+physopt_rp_enable_orient_opt 
+physopt_soft_keepout_distance 
+physopt_tie_const_cells 
+physopt_tie_spare_cells 
+physopt_ultra_high_area_effort 
+pid 
+pipeline_design  -clock_port_name  -minimum_period_only -no_incremental_map -no_compile -reset_polarity -register_outputs -1 -period -async_reset -stall_ports -verbose -sync_reset -print_critical_loop -no_clock_correction -stall_polarity -flatten -stages -exact_map -check_design
+pipeline_loop  -initiation_interval -latency
+pkg_mkIndex 
+pla_read_create_flip_flop 
+plot  -hierarchy -sheet_list -output -symbol_view -schematic_view
+plot_box 
+plot_command 
+plot_orientation 
+plot_scale_factor 
+plotter_maxx 
+plotter_maxy 
+plotter_minx 
+plotter_miny 
+port_complement_naming_style 
+power_cg_all_registers 
+power_cg_cell_naming_style 
+power_cg_designware 
+power_cg_flatten 
+power_cg_gated_clock_net_naming_style 
+power_cg_module_naming_style 
+power_default_static_probability 
+power_default_toggle_rate 
+power_default_toggle_rate_type 
+power_do_not_size_icg_cells 
+power_enable_power_gating 
+power_fix_sdpd_annotation 
+power_fix_sdpd_annotation_verbose 
+power_hdlc_do_not_split_cg_cells 
+power_keep_license_after_power_commands 
+power_keep_tns 
+power_lib2saif_rise_fall_pd 
+power_min_internal_power_threshold 
+power_opto_leakage_first 
+power_preserve_rtl_hier_names 
+power_rclock_inputs_use_clocks_fanout 
+power_rclock_unrelated_use_fastest 
+power_rclock_use_asynch_inputs 
+power_remove_redundant_clock_gates 
+power_rtl_saif_file 
+power_sa_propagation_effort 
+power_sa_propagation_verbose 
+power_sdpd_message_tolerance 
+power_sdpd_saif_file 
+preschedule  -process
+preview_bsd   -script -show
+preview_dft   -test_wrapper -test_mode -test_wrappers -rtl -test_points -show -script -bscan -bsd -verbose -core_integration -physical -no_scan -mbist
+preview_scan   -command -show -script -physical
+print  -hierarchy -sheet_list -symbol_view -schematic_view
+print_message_info   -ids -summary
+print_proc_new_vars 
+print_suppressed_messages 
+print_variable_group 
+printenv 
+printvar   -application -user_defined
+proc 
+proc_args -args -body -cmdcount -commands -complete -default -exists -globals -hostname -level -library -loaded -locals -nameofexecutable -patchlevel -procs -script -sharedlibextension -tclversion -vars
+proc_body -args -body -cmdcount -commands -complete -default -exists -globals -hostname -level -library -loaded -locals -nameofexecutable -patchlevel -procs -script -sharedlibextension -tclversion -vars
+product_build_date 
+product_version 
+propagate_annotated_delay_up 
+propagate_constraints  -min_delay  -format -design -all -disable_timing -max_delay -false_path -ignore_through_port_exceptions -clocks -output -multicycle_path -verbose -port_isolation -gate_clock -dont_apply -case_analysis -ignore_from_or_to_port_exceptions
+propagate_ilm   -include_boundary_cell_delays -delay -keepout -include_all_boundary_cell_delays -verbose -parasitics -placement
+propagate_placement   -verbose
+propagate_switching_activity   -infer_related_clocks -effort -verbose
+prot_update 
+psyn_stress_map 
+push_down_model 
+puts 
+pwd 
+query_objects   -truncate -verbose -class
+quit 
+rc_compute_delta_delay 
+rc_compute_delta_slew 
+rc_driver_model_mode 
+rc_input_threshold_pct_fall 
+rc_input_threshold_pct_rise 
+rc_output_threshold_pct_fall 
+rc_output_threshold_pct_rise 
+rc_receiver_model_mode 
+rc_slew_derate_from_library 
+rc_slew_lower_threshold_pct_fall 
+rc_slew_lower_threshold_pct_rise 
+rc_slew_upper_threshold_pct_fall 
+rc_slew_upper_threshold_pct_rise 
+read   -format -work -names_file -define -library -single_file
+read_bsd_init_protocol 
+read_bsd_protocol 
+read_clusters  -design
+read_db 
+read_db_lib_warnings 
+read_ddc 
+read_def  -design -verbose -quiet -allow_physical_cells -allow_physical_ports -allow_physical_nets -allow_physical_objects -skip_signal_nets -incremental -move_bounds -enforce_scaling -lef_file_name -adjust_tracks
+read_edif 
+read_file   -format -work -rtl -names_file -define -library -ilm -single_file
+read_init_protocol 
+read_lib   -test_model -symbol -format -no_warnings -plibrary -names_file -pplibrary
+read_mdb  -cell_name -design -skip_signal -physical_only -update_sdc
+read_milkyway  -read_only -version -vh_module_only
+read_name_mapping_nowarn_libraries 
+read_parasitics   -strip_path -net_cap_only -quiet -path -format -arnoldi -complete_with -increment -verbose -elmore -syntax_only -dont_write_to_db -pin_cap_included
+read_partition   -source -format -type
+read_pattern_info   -design -overwrite
+read_pin_map 
+read_preserved_function_netlist  -exclude -design_library -force_reload -filename -return_port -clock_port_name -clock_edge -sync_reset -async_reset -reset_polarity
+read_saif   -rtl_direct -target_instance -scale -names_file -exclude_absolute -khrate -verbose -input -ignore_absolute -unit_base -ignore -instance_name -exclude
+read_sdc   -version -echo -syntax_only
+read_sdf  -worst  -path -min_type -max_type -load_delay
+read_sverilog   -rtl -netlist
+read_tdf_ports  -apply -output -verbose
+read_test_model   -design -format
+read_test_protocol   -test_mode -section -overwrite -verbose -silent
+read_translate_msff 
+read_trc_file 
+read_verilog   -rtl -netlist
+read_vhdl   -netlist
+redirect   -variable -tee -append -file
+reduce_fsm 
+reg_global_var 
+regexp 
+register_control  -process -inputs -none -outputs
+register_duplicate 
+regsub 
+remove_analysis_info   -design
+remove_annotated_check   -recovery -to -all -nochange_low -setup -from -removal -fall -nochange_high -hold -clock -rise
+remove_annotated_delay  -non_clock_cell_all  -non_clock_net_all -to -all -net_all -from -cell_all
+remove_annotated_transition   -at<pin_list> -all
+remove_attribute   -quiet -bus
+remove_boundary_cell   -function -core -core_cells -class -ports
+remove_bsd_instruction 
+remove_bsd_port 
+remove_bsd_signal 
+remove_bsd_specification  -runbist  -path -bsr_element -tap_element -intest -all -linkage_port -control_cell -data_cell -configuration -compliance -register -instruction
+remove_bsr_cell_type 
+remove_bus 
+remove_cache  -accessed_since -design_lib  -operating_conditions -tech_lib -implementation -smaller -accessed_beyond -parameters -wire_load -directory -module -larger -model_only -netlist_only
+remove_case_analysis   -all
+remove_ccl_attribute 
+remove_ccl_str_in_pattern_list 
+remove_cell   -all
+remove_cell_degradation 
+remove_clock   -all
+remove_clock_gating   -gated_registers -undo -all -no_hier -min_bitwidth -verbose -gating_cells
+remove_clock_gating_check   -setup -fall -hold -rise
+remove_clock_latency  -max  -source -early -min -fall -late -clock -rise
+remove_clock_transition 
+remove_clock_tree_options  -clock_trees
+remove_clock_uncertainty   -rise_from -to -setup -from -fall -fall_from -fall_to -hold -rise_to -rise
+remove_clusters 
+remove_congestion_options  -all
+remove_constraint   -all
+remove_core_integration_configuration  -all
+remove_core_wrapper_configuration  -all
+remove_core_wrapper_specification  -all -chain -wrapper_design
+remove_delay_calculation 
+remove_design   -designs -quiet -all -hierarchy
+remove_dft_configuration 
+remove_dft_design   -all -design_name -type
+remove_dft_equivalent_signals 
+remove_dft_logic_usage   -test_mode -test_modes -type
+remove_dft_signal   -test_mode -view -hookup_pin -port
+remove_disable_clock_gating_check 
+remove_disable_timing   -all_loop_breaking -to -from
+remove_dont_touch_placement 
+remove_driving_cell 
+remove_fanout_load 
+remove_from_collection 
+remove_from_rp_group  -leaf -hierarchy -keepout -instance
+remove_generated_clock   -all
+remove_highlighting  -all -hier
+remove_ideal_latency  -max  -min -fall -rise
+remove_ideal_net 
+remove_ideal_network 
+remove_ideal_transition  -max  -min -fall -rise
+remove_ignored_layers  -all
+remove_input_delay  -max  -level_sensitive -clock_fall -min -fall -clock -rise
+remove_isolate_ports 
+remove_level_shifters 
+remove_lib  -all -quiet
+remove_license 
+remove_mbist_configuration 
+remove_multibit 
+remove_net   -all -only_physical
+remove_net_isolations  -pairwise -track -auto -user
+remove_net_shielding 
+remove_operand_isolation   -to -from
+remove_output_delay  -max  -level_sensitive -clock_fall -min -fall -clock -rise
+remove_pads  -verify -verify_effort
+remove_pass_directories 
+remove_path_groups 
+remove_pin_map 
+remove_pin_name_synonym  -all
+remove_placement_keepout  -name -all
+remove_port   -all
+remove_port_configuration  -cell -port
+remove_preferred_clock   -capture -setup -launch -hold -clock
+remove_propagated_clock 
+remove_routing_wire_models 
+remove_rp_group  -quiet -hierarchy -all
+remove_rp_group_options  -ignore -x_offset -y_offset
+remove_rtl_load   -all
+remove_scan_group 
+remove_scan_link   -test_mode
+remove_scan_path   -test_mode -view -chain
+remove_scan_register_type 
+remove_scan_replacement 
+remove_scan_specification   -link -bidirectionals -test_mode -signal -all -chain -tristates -configuration -segment
+remove_scenario  -all
+remove_scheduling_constraints  -process
+remove_target_library_subset   -object_list -top
+remove_test_assume 
+remove_test_mode   -view -existing -spec|-existing -spec
+remove_test_model   -design
+remove_test_point_element   -type
+remove_test_protocol   -test_mode -design
+remove_unconnected_ports   -blast_buses
+remove_user_attribute  -quiet -bus
+remove_wire_load_min_block_size 
+remove_wire_load_model  -max  -min -cluster
+remove_wire_load_selection_group  -max  -min -cluster
+remove_wiring_keepout  -name -all
+remove_wrapper_element 
+rename 
+rename_design 
+reoptimize_design  -map_effort -tolerance_to_change -no_design_rule -only_design_rule -only_hold_time -cpr -sizing -pin_swap -buffer_insertion -buffer_removal -area_recovery -ignore_cell_area -ignore_footprint
+reoptimize_design_changed_list_file_name 
+replace_clock_gating_cells   -no_hier
+replace_fpga  -force -group_cells -group_tlus -verify -verify_hierarchically -verify_effort
+replace_synthetic   -ungroup
+report_ahfs_options 
+report_annotated_check   -nosplit
+report_annotated_delay   -nosplit -min -net -cell -summary
+report_annotated_transition   -nosplit
+report_antenna  -dir -violators_report_file -report_net_calculation -calculation_report_file
+report_area   -nosplit -physical
+report_attribute   -design -nosplit -net -instance -cell -pin -reference -port -hierarchy
+report_auto_ungroup   -nosplit -full
+report_autofix_configuration   -type
+report_autofix_element   -type
+report_boundary_cell 
+report_buffer_tree  -connections  -nosplit -net -depth -from -physical -hierarchy
+report_bus   -nosplit
+report_cache  -accessed_since -design_lib  -operating_conditions -tech_lib -implementation -smaller -accessed_beyond -sort_cache_key -parameters -statistics -wire_load -sort_oldest -directory -sort_largest -module -larger -model_only -netlist_only
+report_case_analysis   -nosplit -all
+report_cell  -connections  -nosplit -only_physical -verbose -significant_digits -physical -luts
+report_clock   -nosplit -attributes -skew
+report_clock_gating   -nosplit -only -multi_stage -no_hier -gated -verbose -gating_elements -ungated -physical
+report_clock_gating_check   -nosplit -significant_digits
+report_clock_tree_power   -sort_mode -net -cell -include_input_nets -verbose -include_register
+report_clusters  -cluster -leaf -nosplit
+report_compile_options   -nosplit
+report_congestion  -congestion_effort -histo_start -histo_interval -verbose -coordinate -x_step -region_by_region_report -y_step
+report_congestion_options  -all
+report_constraint  -min_delay  -max_fanout -multiport_net -connection_class -nosplit -max_leakage_power -max_delay -max_dynamic_power -max_capacitance -max_total_power -max_toggle_rate -cell_degradation -register_max_fanout -max_area -all_violators -verbose -critical_range -max_transition -significant_digits -min_capacitance -min_fanout -max_net_length -min_porosity
+report_crpr  -from -to -from_clock -to_clock -setup -hold
+report_default_significant_digits 
+report_delay_calculation  -max  -nosplit -to -min -from
+report_delay_estimation_options 
+report_design   -nosplit -verbose -physical -hierarchy
+report_design_lib   -designs -architectures -libraries -packages
+report_dft  -test_mode -scan
+report_dft_clock_controller  -test_mode
+report_dft_configuration 
+report_dft_design   -all -design_name -type
+report_dft_drc_rules   -all -cell -violation
+report_dft_equivalent_signals 
+report_dft_insertion_configuration 
+report_dft_signal   -test_mode -view -type -port
+report_direct_power_rail_tie 
+report_disable_timing   -nosplit
+report_dp_smartgen_options 
+report_dw_rp_group_options  -all
+report_fat_contact_options 
+report_fault   -design -exec
+report_floorplan_macro_array 
+report_floorplan_macro_options 
+report_floorplan_options 
+report_floorplan_pnet_options  -name
+report_floorplan_port_options 
+report_fpga  -one_level -nosplit
+report_fpga_clock_gating  -sequential -non_sequential
+report_fsm   -nosplit
+report_gui_stroke_bindings  -dictionary
+report_gui_stroke_builtinss  -dictionary
+report_hierarchy   -nosplit -full -noleaf
+report_ideal_network   -timing -net -cell -load_pin
+report_ignored_layers 
+report_internal_loads   -nosplit
+report_isolate_ports   -nosplit
+report_lbist_configuration 
+report_lib   -full_table -em -fpga -all -user_defined_data -timing -noise -routing_rule -table -yield -power -timing_label -timing_arcs -k_factors -rwm -power_label -ccs_recv -noise_arcs -vhdl_name
+report_logicbist_configuration   -test_mode
+report_mbist_program   -show -name -type
+report_mbist_trace  -trace_file  -test_mode -format -show -rt_test -core_index -fail_limit -diag_out
+report_mode   -nosplit
+report_mpc_macro_array 
+report_mpc_macro_options 
+report_mpc_options 
+report_mpc_pnet_options  -name
+report_mpc_port_options 
+report_mpc_ring_options 
+report_multibit   -nosplit
+report_multicycles  -process
+report_name_rules 
+report_names   -dont_touch -nosplit -rules -original -hierarchy
+report_net  -connections  -noflat -min -transition_times -nosplit -only_physical -max_toggle_rate -cell_degradation -verbose -significant_digits -physical
+report_net_characteristics  -net_links  -slack -row_height -format -all -port_count -name -capacitance -enclosed -limit -no_split -pin_count -output -verbose -separator -cell_pin_count -wire_length -hier_depth -weights -fanout -cell_area
+report_net_fanout  -connections  -tree -bound -min -nosplit -depth -verbose -high_fanout -physical -threshold
+report_net_isolations  -pairwise -track -auto -user
+report_net_shielding 
+report_operand_isolation   -instances -isolated_objects -nosplit -all_objects -unisolated_objects -no_hier -verbose
+report_operating_conditions   -name -library
+report_packages 
+report_pad  -input -output -inout -library
+report_partitions   -nosplit
+report_parts  -min_utlz -max_utlz -all
+report_pass_data   -pass_list -hierarchy
+report_path_budget   -nworst -nosplit -all -to -through -from -transition_time -nets -verbose -max_paths -significant_digits -input_pins
+report_path_group   -nosplit -expanded
+report_pin_name_synonym  -nosplit
+report_placement_keepout  -name
+report_port   -nosplit -drive -only_physical -verbose -significant_digits -physical
+report_power   -flat -exclude_leq -sort_mode -nworst -hier -nosplit -only -net -cell -cumulative -exclude_geq -verbose -include_input_nets -hier_level -histogram -analysis_effort -exclude_boundary_nets
+report_power_calculation   -nosplit -fall -verbose -state_condition -path_source -rise
+report_power_gating   -unconnected -missing
+report_qor   -significant_digits
+report_reference   -nosplit
+report_register  -nosplit -no_hierarchy -clock -inverted_output -level_sensitive -edge_triggered -master_slave
+report_resource_estimates 
+report_resources   -nosplit -hierarchy
+report_routability  -nosplit
+report_routing_constraint_violations  -nets -dir -isolation -netbound -verbose
+report_routing_layer_constraint  -layer
+report_routing_min_area_rule 
+report_routing_weights 
+report_routing_wire_models 
+report_rtc_routing_options 
+report_saif   -flat -hier -only -annotated_flag -type -rtl_saif -missing
+report_scan_compression_configuration 
+report_scan_configuration   -test_mode
+report_scan_group 
+report_scan_link   -test_mode
+report_scan_path   -test_mode -view -cell -chain
+report_scan_register_type 
+report_scan_replacement   -bsd -assertions
+report_scan_state 
+report_schedule  -process -operations -mask -start -finish -delimiter -variables -min -max -start -finish -delimiter -summary -abstract_fsm -mask -verbose_fsm -mask
+report_scheduling_constraints  -process -dont_chain -chains -antichains -two_point -preschedule -pipeline
+report_shielding_options 
+report_synlib 
+report_target_library_subset   -object_list -top
+report_test   -replacements -test_mode -register_type -nosplit -methodology -incremental -show -dft -bist -scan_path -no_split -core_integration_configuration -replacement -autofix_configuration -bsd -schedule -assertions -trace_nets -bist_config -port -constraints -testability_configuration -inst -configuration -bsd_configuration -dft_configuration -core_wrapper_configuration -clock -state
+report_test_assume 
+report_test_mode  -design -all -verbose
+report_test_model   -design
+report_test_point_element  -type
+report_testability_configuration   -type
+report_threshold_voltage_group   -verbose
+report_timing   -path -sort_by -locations -greater_path -nworst -true -nosplit -delay -to -through -enable_preset_clear_arcs -from -transition_time -capacitance -temperature -crosstalk_delta -group -nets -max_paths -justify -significant_digits -voltage -true_threshold -loops -lesser_path -derate -physical -input_pins -attributes
+report_timing_derate   -nosplit -include_inherited
+report_timing_requirements   -nosplit -to -through -from -ignored -expanded -attributes
+report_tlu_plus_files 
+report_transitive_fanin   -nosplit -to
+report_transitive_fanout   -nosplit -from -clock_tree
+report_ultra_optimization 
+report_use_test_model 
+report_wire_load   -design -nosplit -name -libraries
+report_wiring_keepout  -name
+report_wrapper_configuration 
+report_xref  -nosplit
+reset_autofix_configuration  -type
+reset_autofix_element  -type
+reset_bsd_configuration 
+reset_compare_design_script 
+reset_design 
+reset_dft_clock_controller  -test_mode
+reset_dft_configuration 
+reset_dft_drc_rules   -cell -violation
+reset_dft_insertion_configuration 
+reset_lbist_configuration 
+reset_logicbist_configuration   -test_mode
+reset_mbist_configuration 
+reset_mbist_controller   -instance
+reset_mbist_programs 
+reset_mbist_wrapper   -target
+reset_mode 
+reset_path   -to -through -from -setup -fall -hold -rise
+reset_scan_compression_configuration 
+reset_scan_configuration   -test_mode
+reset_switching_activity   -all -max_toggle_rate -verbose -switching_activity
+reset_test_mode 
+reset_testability_configuration  -type
+reset_testbench_parameters   -test_mode
+reset_timing_derate 
+reset_wrapper_configuration 
+reshape_placement_keepout  -name -coordinate
+reshape_wiring_keepout  -name -coordinate
+resize_objects  -source_rectangle -destination_rectangle -ignore_bounds -respect_bounds -ignore_mobility -respect_mobility -ignore_rigidity -respect_rigidity
+retime_clock_tree  -clock_trees
+return 
+return_val  -suffix  -designs -format -constraints_only -environment_only -output -cells -no_lib_info
+rewire_clock_gating   -undo -balance_fanout -gated_objects -verbose -gating_cell
+rom_auto_inferring 
+route_power  -dir -design -incr -hier -update_db -nets -route_io -route_all_ios -route_hbus -route_stripe -hor_to_ver_stripe -route_block
+route_quick 
+rp_group_inclusions 
+rp_group_instantiations 
+rp_group_references  -leaf -instance
+rtl2saif   -design -output
+rtl_analyzer  -output -project_file -search_additional -dont_start -use_primetime -host -arch
+rtl_load_resistance_factor 
+rtldrc  -max_detail_lines
+save_gw_preferences  -output
+scan 
+schedule  -effort -io_mode -extend_latency -host -arch -allocation_effort
+sdc_version 
+sdc_write_unambiguous_names 
+sdf_enable_cond_start_end 
+sdfout_allow_non_positive_constraints 
+sdfout_min_fall_cell_delay 
+sdfout_min_fall_net_delay 
+sdfout_min_rise_cell_delay 
+sdfout_min_rise_net_delay 
+sdfout_time_scale 
+sdfout_top_instance_name 
+sdfout_write_to_output 
+search_path 
+seek 
+set 
+set_ahfs_options  -default -hf_threshold -mf_threshold -remove_effort -default_reference -enable_port_punching -port_map_file
+set_annotated_check  -worst  -recovery -to -nochange_low -from -setup -removal -fall -nochange_high -hold -clock -rise
+set_annotated_delay  -worst -max  -to -min -net -from -fall -cell -load_delay -rise
+set_annotated_transition  -max  -min -fall -rise
+set_attribute   -quiet -bus -type
+set_auto_disable_drc_nets   -all -default -constant -scan -none -clock
+set_autofix_async 
+set_autofix_clock 
+set_autofix_configuration  -include_elements  -method -data_is_clock -bus -fix_data -fix_latch -control_signal -async_fix -clocks -type -test_data -exclude_elements -async -xprop -fix_async_with_scan_en
+set_autofix_element   -method -fix_data -fix_latch -control_signal -type -test_data -async -clock
+set_balance_registers   -design
+set_behavioral_reset  -process -port -active -fsm -async -all
+set_bist_auto_parameters  -data_compression -cycle_compression -scan_cells -scan_mode_chain_length
+set_bist_configuration  -tri_state_mux  -diag_output -cut_selector_loop -prpg_length -selector_shadow_si -invert_prpg_clock -integration -bist_ready -balance_bist_segments -auto -codec_count -type -max_chain_length -use_tri_state_for_selector -bist_chain_count -observe_output -actual_seed_per_load -prpg_shadow_si -codec_insertion -max_pattern_count -max_seed_per_load
+set_boundary_cell   -safe_state -design -name -share -function -type -core_cells -register_io_implementation -use_dedicated_wrapper_clock -class -ports
+set_boundary_cell_io   -cell -type -access
+set_boundary_optimization 
+set_bsd_bsr_element  -type -access -design
+set_bsd_compliance   -name -pattern
+set_bsd_configuration   -flow -check_pad_designs -ir_width -integrate -control_cell_max_fanout -instruction_encoding -default_package -infer_instructions -ieee1149.1_1993 -style -asynchronous_reset
+set_bsd_control_cell  -port_list -type -no_share
+set_bsd_data_cell  -port_list  -function -direction
+set_bsd_instruction   -view -input_clock_condition -output_condition -internal_scan -private -code -signature -clock_cycles -user_code_val -capture_value -inst_enable -register
+set_bsd_intest  -time -clock_cycles
+set_bsd_linkage_port  -port_list 
+set_bsd_pad_design  -access -type -differential -disable_res -lib_cell -bsr_segment
+set_bsd_path  -name
+set_bsd_port 
+set_bsd_power_up_reset   -active -delay -reset_pin_name -cell_name
+set_bsd_register  -access -cell -style
+set_bsd_runbist   -signature -clock_cycles -time
+set_bsd_signal 
+set_bsd_tap_element  -access -design
+set_bsr_cell_type  -port -direction
+set_case_analysis 
+set_cell_degradation 
+set_cell_internal_power   -delete_all
+set_cell_location  -coordinates
+set_cle_options  -beep  -defaults -mode
+set_clock_gating_check  -high  -setup -fall -low -hold -rise
+set_clock_gating_registers  -include_instances  -undo -exclude_instances
+set_clock_gating_style   -max_fanout -sequential_cell -num_stages -observation_point -setup -cg_style -observation_logic_depth -control_signal -negative_edge_logic -gicg_pos_auto -gicg_neg_auto -hold -minimum_bitwidth -gicg_pos_cell -positive_edge_logic -gicg_neg_cell -no_sharing -control_point
+set_clock_latency  -max  -source -early -min -fall -late -clock -rise
+set_clock_skew  -ideal -propagated -min -max -delay -rise_delay -fall_delay -uncertainty -minus_uncertainty -plus_uncertainty
+set_clock_transition  -max  -min -fall -rise
+set_clock_tree_root_delay 
+set_clock_uncertainty   -rise_from -to -setup -from -fall -fall_from -fall_to -hold -rise_to -rise
+set_combinational_type   -replacement_gate
+set_command_mode  -mode -command
+set_common_resource  -process -min_count -max_count -force_sharing -exclusive
+set_compare_design_script  -ignore -only -accept
+set_compile_directives  -delete_unloaded_gate -constant_propagation -local_optimization -critical_path_resynthesis
+set_compile_partitions   -designs -all -level -no_reset -auto -force
+set_congestion_options  -horizontal -vertical -max_util -coordinate -layer -availability
+set_connection_class 
+set_context_margin  -max  -min -relax -percent
+set_core_integration_configuration  -mode_decoding_style -include_cells -exclude_cells
+set_core_wrapper_cell  -cell_type -safe_value -use_register_io -register_io_implementation -one_wrapper_clock -port_list
+set_core_wrapper_cell_design  -type -access -design
+set_core_wrapper_configuration  -use_register_io -dedicated_wrapper_cell -shared_wrapper_cell -register_io_implementation -one_wrapper_clock -default_safe_state -chain_count -longest_chain_length
+set_core_wrapper_path   -test_mode -wrp_shift -all_outputs -all_inputs -complete
+set_cost_priority  -min_delay  -delay -default -design_rules -firm_area_limit
+set_critical_range 
+set_current_command_mode   -command -mode
+set_cycles  -process -from_option -to_option
+set_datapath_optimization 
+set_default_drive  -max  -min -fall -none -rise
+set_default_driving_cell   -dont_scale -no_design_rule -from_pin -multiply_by -fall -pin -none -lib_cell -library -rise
+set_default_fanout_load   -none
+set_default_input_delay   -none
+set_default_load  -max  -pin_load -min -wire_load -none
+set_default_output_delay   -none
+set_delay_calculation   -arnoldi -elmore
+set_delay_estimation_options  -min_unit_horizontal_capacitance -min_unit_vertical_capacitance -min_unit_horizontal_resistance -min_unit_vertical_resistance -max_unit_horizontal_capacitance -max_unit_vertical_capacitance -max_unit_horizontal_resistance -max_unit_vertical_resistance -min_unit_horizontal_capacitance_scaling_factor -min_unit_vertical_capacitance_scaling_factor -min_unit_horizontal_resistance_scaling_factor -min_unit_vertical_resistance_scaling_factor -max_unit_horizontal_capacitance_scaling_factor -max_unit_vertical_capacitance_scaling_factor -max_unit_horizontal_resistance_scaling_factor -max_unit_vertical_resistance_scaling_factor -default -min_via_resistance -max_via_resistance -min_via_resistance_scaling_factor -max_via_resistance_scaling_factor
+set_design_license   -quiet -dont_show -limited
+set_dft_clock_controller   -pllclocks -design -ateclocks -design_name -cycles_per_clock -cell_name -chain_count
+set_dft_configuration   -autofix -scan_compression -fix_reset -integration -testability -observe_points -fix_set -bist -control_points -bscan -bsd -clock_controller -tester_checks -core_wrapper -scan -fix_xpropagation -fix_bus -fix_bidirectional -membist -logicbist -shadow_wrapper -core_integration -mode_decoding_style -order -fix_clock -mbist -boundary -wrapper
+set_dft_drc_configuration   -assume_pi_scan -use_test_model -assume_po_scan -internal_pins -pll_bypass
+set_dft_drc_rules   -error -cell -ignore -warning
+set_dft_equivalent_signals 
+set_dft_insertion_configuration   -route_scan_clock -route_scan_serial -map_effort -synthesis_optimization -route_scan_enable -preserve_design_name -unscan
+set_dft_logic_usage   -test_mode -usage -test_modes -type
+set_dft_optimization_configuration   -all -none -preserve_design_name -unscan -def_out
+set_dft_rtl_configuration   -model_output -format -file_structure -output_directory -renaming_style -naming_style
+set_dft_signal   -test_mode -hookup -view -active_state -timing -hookup_pin -sense -freq_mult -hookup_sense -type -port -internal_clocks
+set_die_area  -coordinate -fixed -unfixed
+set_direct_power_rail_tie 
+set_disable_clock_gating_check 
+set_disable_timing   -reset_loop_breaking_arcs -restore -to -from
+set_dont_remap 
+set_dont_touch 
+set_dont_touch_network 
+set_dont_touch_placement 
+set_dont_use   -power
+set_dp_smartgen_options  -4to2_compressor_cell  -sop2pos_transformation -bounded_fanout_adder -mux_based -all_options -inv_adder_cell -carry_select_adder_cell -booth_cell -half_subtractor_cell -smart_compare -booth_encoding
+set_dps_module_options  -name -host -arch -lsf_arch -lsf_args -grd_arch -grd_args -physopt_options -no_opt
+set_dps_options  -scr -setup_only -no_merge -physopt_options -skip_setup
+set_drive  -max  -min -fall -rise
+set_driving_cell   -dont_scale -no_design_rule -input_transition_fall -from_pin -multiply_by -cell -please -fall -pin -input_transition_rise -none -lib_cell -library -rise
+set_dw_rp_group_options  -instance -alignment -orientation -utilization -bit_height -x_offset -y_offset -rp_optimization
+set_eco_align 
+set_eco_obsolete  -set -remove -print
+set_eco_recycle  -set -remove -print
+set_eco_reuse 
+set_eco_target  -taps
+set_eco_unique 
+set_electromigration_drc  -use_switching_activity
+set_equal 
+set_exclusive_use  -process -shared
+set_false_path   -to -through -from -setup -fall -reset_path -hold -rise
+set_fanout_load 
+set_fat_contact_options  -method -prevent_sig_pin -prevent_pg_pin -prevent_fat_wire -detect_sig_pin -detect_pg_pin -detect_fat_wire -area -nets -cell_pins -ref_pins -effort
+set_fix_hold 
+set_fix_multiple_port_nets   -feedthroughs -all -outputs -default -constants -buffer_constants
+set_flatten   -minimize -quiet -design -effort -phase
+set_floorplan_macro_array  -name -elements -align_edge -align_pins -x_offset -y_offset -vertical -verbose -reset
+set_floorplan_macro_options  -legal_orientations -anchor_bound -align_pins -x_offset -y_offset -reset -snap_to_edge -edge_channel -group_name -group_spacing
+set_floorplan_options  -utilization -aspect_ratio -row_direction -routing_track_offset_x -routing_track_offset_y -origin -top_port_limit -bottom_port_limit -left_port_limit -right_port_limit -min_port_pitch -corner_keepout -horz_port_layer_name -vert_port_layer_name -io_margin_left -io_margin_right -io_margin_top -io_margin_bottom -core_width -core_height -first_row_orientation -dont_snap_port -reset -shift_to_center -rectilinear_outline
+set_floorplan_pnet_options  -name -reset -layer -type -width -pitch -offset -direction -mult_via_x -mult_via_y -model_vias
+set_floorplan_port_options  -side -x_bounds -y_bounds -layer -group -group_name -order -pitch -start_location -pin_order -offset -width -height -dont_snap -reset
+set_fpga  -target -device -speed -module -list
+set_fpga_clock_gate_removal 
+set_fpga_defaults  -verbose -formality
+set_fpga_dont_infer_block  -type
+set_fpga_global_buffer 
+set_fpga_global_buffer_min_fanout  -clock -non_clock -default
+set_fpga_ignore_force_implementation  -all
+set_fpga_iob_register  -enable -disable
+set_fpga_pad_type  -pad -iostandard -drive -slew -loc -pullup -pulldown
+set_fpga_resource_limit  -limit -show_all -remove
+set_fpga_retime 
+set_fpga_target_device  -show_all -default -step
+set_fsm_encoding 
+set_fsm_encoding_style 
+set_fsm_minimize 
+set_fsm_order 
+set_fsm_preserve_state 
+set_fsm_state_vector 
+set_gui_stroke_binding  -builtin -clear -tcl_cmd -label
+set_gui_stroke_preferences  -type -shift -ctrl -alt -extended_help_delay
+set_gw_preference  -pref_object -key -value
+set_ideal_latency  -max  -min -fall -rise
+set_ideal_net 
+set_ideal_network   -dont_care_placement -no_propagate
+set_ideal_transition  -max  -min -fall -rise
+set_ignored_layers 
+set_impl_priority   -priority -set_id
+set_implementation   -check_impl
+set_input_delay  -max  -level_sensitive -clock_fall -add_delay -min -fall -source_latency_included -network_latency_included -clock -rise
+set_input_parasitics  -resistance -min -max
+set_input_transition  -max  -min -fall -rise
+set_inverted_placement_keepout 
+set_inverted_wiring_keepout 
+set_isolate_ports   -type -force -driver
+set_isolation_operations  -process -exclude_operations -include_operations
+set_keepout_margin  -type -outer
+set_layer 
+set_level_shifter_strategy   -rule
+set_level_shifter_threshold   -percent -voltage
+set_lib_attribute 
+set_lib_rail_connection  -lib_cells -lib_rail_name -lib_pin
+set_libcell_dimensions   -cell -width -height
+set_libpin_location   -cell -pin -coordinate
+set_load  -max  -pin_load -min -wire_load -subtract_pin_load
+set_local_link_library 
+set_logic_dc 
+set_logic_one 
+set_logic_zero 
+set_logicbist_configuration  -type -test_mode -bist_ready -integration -codec_insertion -auto -prpg_length -codec_count -max_chain_length -balance_bist_segments -prpg_shadow_si -selector_shadow_si -observe_output -invert_prpg_clock -use_tri_state_for_selector -max_pattern_count
+set_lut_function  -init
+set_map_only 
+set_max_area   -ignore_tns
+set_max_capacitance 
+set_max_cycles  -process -from_option -to_option
+set_max_delay   -to -through -from -fall -reset_path -group_path -rise
+set_max_dynamic_power   -effort
+set_max_fanout 
+set_max_leakage_power   -effort -use_sd_info
+set_max_net_length 
+set_max_peak_noise 
+set_max_time_borrow 
+set_max_toggle_rate  -value -clock
+set_max_total_power   -leakage_effort -dynamic_weight -leakage_weight -dynamic_effort
+set_max_transition 
+set_max_yield   -max_area_threshold -protect_tns
+set_mbist_configuration  -include_elements  -num_memories_per_controller -parameters -exclude_elements -num_controllers -technology
+set_mbist_controller   -target -ip_parameters -instance -parameters -mbist_clock -memory_cells -complete -controller_names
+set_mbist_element   -content_format -content_file -ip_parameters -notouch -memory_cells
+set_mbist_run   -test_mode -parameters
+set_mbist_wraper  -target -content_file -content_format -parameters
+set_mbist_wrapper  -target -parameters -content_file -content_format
+set_memory_input_delay  -external -name
+set_memory_output_delay  -external -name
+set_message_info   -id -limit
+set_message_severity   -names
+set_min_capacitance 
+set_min_cycles  -process -from_option -to_option
+set_min_delay   -to -through -from -fall -reset_path -rise
+set_min_library   -min_version -none
+set_min_porosity 
+set_minimize_tree_delay   -design
+set_mode 
+set_model_drive 
+set_model_load 
+set_model_map_effort 
+set_model_scale 
+set_module_clock_edges   -undo -rising_edge_clock -falling_edge_clock
+set_module_clock_gates   -include_cells -undo -exclude_cells
+set_mpc_macro_array  -name -elements -align_edge -align_pins -x_offset -y_offset -vertical -verbose -reset
+set_mpc_macro_options  -legal_orientations -anchor_bound -align_pins -x_offset -y_offset -reset -snap_to_edge -edge_channel -group_name -group_spacing
+set_mpc_options   -core_height -row_direction -io_margin_right -rectilinear_outline -reset -io_margin_left -dont_snap_port -corner_keepout -routing_track_offset_x -io_margin_top -top_port_limit -routing_track_offset_y -first_row_orientation -vert_port_layer_name -dont_promote_layer -right_port_limit -aspect_ratio -core_width -min_port_pitch -bottom_port_limit -left_port_limit -utilization -origin -horz_port_layer_name -shift_to_center -io_margin_bottom
+set_mpc_pnet_options  -name -reset -layer -type -width -pitch -offset -direction -mult_via_x -mult_via_y -model_vias
+set_mpc_port_options   -y_bounds -side -reset -layer -start_location -pin_order -group -width -height -offset -group_name -dont_snap -x_bounds -order -pitch
+set_mpc_ring_options  -name -reset -layer -type -width -offset -sides
+set_multibit_options   -default -minimum_width -mode
+set_multicycle_path   -to -through -from -setup -start -end -fall -reset_path -hold -rise
+set_mw_design  -min_tluplus  -tech_pdb -min_phys -tf2itf_map -max_phys -max_tluplus -dont_convert_tech_pdb -nom_tluplus
+set_mw_reference_library 
+set_net_isolations  -tracks -pairwise -auto -nworst
+set_net_shielding 
+set_noise_slack_range  -max  -min -path_group
+set_operand_isolation_cell 
+set_operand_isolation_scope 
+set_operand_isolation_slack   -weight
+set_operand_isolation_style   -logic -verbose -user_directives
+set_operating_conditions  -max  -min_phys -min -max_library -max_phys -object_list -min_library -library
+set_opposite 
+set_optimize_registers   -design
+set_output_delay  -max  -level_sensitive -clock_fall -add_delay -min -fall -source_latency_included -group_path -network_latency_included -clock -rise
+set_pad_type  -no_clock  -pulldown -slewrate -voh -pullup -vomax -vol -schmitt -vomin -hysteresis -vimax -opensource -exact -vimin -example -vih -clock -currentlevel -opendrain -vil
+set_pin_name_synonym  -full_name -force
+set_pipeline_stages  -fixed -min -auto
+set_placement_area  -coordinate -fixed -unfixed
+set_plib_layer_model 
+set_port_configuration  -cell -port -wrapper_exclude -tristate -clock -read -write
+set_port_fanout_number  -max  -min
+set_port_is_pad 
+set_port_location   -layer_area -append -coordinate -layer_name
+set_power_gating_signal   -power_pin_index -type -library_pin
+set_power_gating_style   -type -hdl_blocks -hierarchy
+set_power_rail  -lib -default_rail -rail_list
+set_power_rail_connection  -lib_rail_name -pnet_name -port_type -hierarchy -force
+set_prefer   -min
+set_preferred_clock   -capture -setup -launch -hold -clock
+set_propagated_clock 
+set_rail_voltage  -rail_value -rail_list -max -min
+set_register_max_fanout 
+set_register_type   -latch -exact -flip_flop
+set_register_type_for_retiming  -latch -flip_flop
+set_resistance  -max  -min
+set_resource_allocation 
+set_resource_implementation 
+set_retiming_bound  -forward -backward
+set_retiming_ignore_path  -from -through -to -reset_path
+set_routing_layer_constraint  -layer -group -disable -avoid -enable -minimal_width -spacing_rule
+set_routing_layer_plength_threshold  -plength -layer
+set_routing_layer_preferred_direction  -layer -prefer_dir -coordinates -default
+set_routing_min_area_rule 
+set_routing_weights 
+set_routing_wire_model  -coordinate
+set_rp_group_options  -alignment -pin_align_name -utilization -ignore -x_offset -y_offset
+set_rtc_routing_options  -cut_out_covered_ports -detail_time_limit -fix_detail_routes -global_row_size -global_time_limit -max_errors -max_memory_available -mpass_time_limit -no_port_shorts_upto -reach_core_offgrid_port -reach_block_offgrid_port -reach_pad_offgrid_port -reach_chiplevel_offgrid_port -route_directory -tapering -total_time_limit -use_wide_spacing_to_block_obst -window_size_factor
+set_rtl_load  -max  -min -capacitance -resistance
+set_scan_bidi   -port
+set_scan_compression_configuration   -minimum_compression -integration_only
+set_scan_configuration  -external_tristates  -route -lssd -nonscan -insert_terminal_lockup -hierarchical_isolation -replace -multibit_segments -aux_clock_lssd -add_lockup -max_length -shared_scan_in -domain_based_scan_enable -count_per_domain -create_dedicated_scan_out_ports -style -route_signals -dedicated_scan_ports -pipeline_fanout_limit -minimize_hold_time_violations -scan_enable_per_domain -lockup_type -internal_tristates -internal_clocks -insert_end_of_chain_lockup_latch -share_pins -combinational -test_mode -create_test_clocks_by_system_clock_domain -methodology -multiplexed_flip_flop -longest_chain_length -max_additional_wirelength -existing_scan -minimize_hold_time_violation -preserve_multibit_segment -prtool -rebalance -partition -bidi_mode -clock_mixing -exclude_elements -disable -voltage_mixing -chain_count -physical -prfile -clocked_scan -pipeline_scan_enable
+set_scan_element   -multibit
+set_scan_exclude  -multibit
+set_scan_group   -serial_routed -access -include_elements
+set_scan_link   -test_mode
+set_scan_path   -scan_slave_clock -head_elements -view -input_wrapper_cells_only -insert_terminal_lockup -scan_master_clock -scan_data_out -tail_elements -output_wrapper_cells_only -class -complete -clock -include_elements -hookup -test_mode -scan_enable -ordered_elements -chain_length -infer_dft_signals -exact_length -dedicated_scan_out -scan_data_in
+set_scan_register_type   -type -exact
+set_scan_replacement   -lssd -remove -nonscan -aux_clock_lssd -combinational -multiplexed_flip_flop -clocked_scan
+set_scan_segment   -access -contains -synthesizable -reverse_order
+set_scan_signal   -sense -test_mode -hookup -chain -port
+set_scan_state 
+set_scan_style 
+set_scan_transparent   -existing -multibit
+set_scan_tristate   -net
+set_schematic_preference 
+set_share_cse   -design
+set_shielding_options  -extra_space -extra_width
+set_signal_type   -associated_clock -index
+set_simple_compile_mode   -budget -verbose
+set_size_only   -all_instances
+set_stall_pin  -process
+set_state_for_retiming 
+set_structure   -design -boolean_effort -timing -boolean
+set_svf   -append -off
+set_switching_activity   -hier -period -verbose -select -static_probability -clock -instances -rise_ratio -state_dep -toggle_rate -path_dep
+set_synlib_dont_get_license 
+set_tap_elements  -state_cells
+set_target_library_subset   -object_list -milkyway_reflibs -top
+set_test_assume 
+set_test_dont_fault 
+set_test_hold 
+set_test_initial 
+set_test_isolate 
+set_test_model 
+set_test_point_element   -source_or_sink -test_points_per_test_point_enable -control_signal -clock_signal -scan_test_point_enable -type -scan_source_or_sink -test_points_per_source_or_sink -power_saving -test_point_enable
+set_test_target   -purpose -cores -test_mode
+set_testability_configuration   -method -test_points_per_scan_cell -max_test_points -control_signal -clock_signal -type -max_observe_logic_area -power_saving_on -power_saving -clock_type -max_additional_logic_area -top_instance -share_across_hierarchy -max_observe_points -control_points_per_scan_cell -max_control_points -observe_points_per_scan_cell
+set_testability_element 
+set_testbench_parameters  -parameters -test_mode
+set_timing_derate  -max  -min -data -cell_delay -cell_check -clock -early -late -net_delay
+set_timing_ranges   -library
+set_tlu_plus_files  -max_tluplus -min_tluplus -tech2itf_map
+set_transform_for_retiming 
+set_trc_configuration   -testers
+set_true_delay_case_analysis 
+set_ultra_optimization   -no_auto_dwlib -force
+set_unconnected 
+set_ungroup 
+set_unix_variable 
+set_use_test_model  -true -false
+set_user_attribute  -bus -quiet
+set_user_budget   -to -from -percent
+set_verification_friendly_mode  -dp_optimization_effort -off -allow_override
+set_vsdc   -append -off
+set_wire_load  -mode -min_block_size -library -cluster -selection_group -min -max -port_list
+set_wire_load_min_block_size 
+set_wire_load_mode 
+set_wire_load_model  -max  -min -name -library -cluster
+set_wire_load_selection_group  -max  -min -library -cluster
+set_wrapper_configuration   -safe_state -shared_design_name -shared_cell_type -dedicated_design_name -core -dedicated_cell_type -delay_test -register_io_implementation -style -use_dedicated_wrapper_clock -class
+set_wrapper_element 
+setenv 
+sh 
+sh_arch 
+sh_command_abbrev_mode 
+sh_command_log_file 
+sh_continue_on_error 
+sh_dev_null 
+sh_enable_page_mode 
+sh_list_key_bindings   -nosplit
+sh_new_variable_message 
+sh_new_variable_message_in_proc 
+sh_new_variable_message_in_script 
+sh_product_version 
+sh_script_stop_severity 
+sh_source_emits_line_numbers 
+sh_source_logging 
+sh_source_uses_search_path 
+sh_tcllib_app_dirname 
+sh_user_man_path 
+shell_is_in_xg_mode 
+show_end_point_slack_histogram  -delay_type -min -max -numbins -title
+show_histogram_generic  -clct -value_func -numbins -title -xaxis -yaxis -rightworst
+show_net_capacitance_histogram  -min -max -numbins -title
+show_path_schematic 
+show_path_slack_histogram  -from -through -to -nworst_paths -max_paths -group -delay_type -min -max -numbins -title -from_type -thru_type -to_type
+show_report_to_window 
+simplify_constants   -boundary_optimization
+single_group_per_sheet 
+site_info_file 
+sizeof_collection 
+socket 
+sort_collection   -descending
+sort_outputs 
+source   -echo -verbose
+split 
+string 
+sub_designs_of   -ndt_only -partition_only -multiple_instances -in_partition -single_instances -dt_only -names_only -hierarchy
+sub_instances_of   -ndt_only -partition_only -in_partition -dt_only -names_only -master_instance -of_references -hierarchy
+subst 
+suppress_errors 
+suppress_message 
+svf_file_records_change_names_changes 
+switch 
+symbol_library 
+synlib_abort_wo_dw_license 
+synlib_disable_limited_licenses 
+synlib_dont_get_license 
+synlib_dwgen_smart_generation 
+synlib_enable_dpgen 
+synlib_evaluation_mode 
+synlib_hiis_force_on_cells 
+synlib_iis_use_netlist 
+synlib_model_map_effort 
+synlib_optimize_non_cache_elements 
+synlib_prefer_ultra_license 
+synlib_replace_synthetic_oani 
+synlib_sequential_module 
+synlib_wait_for_design_license 
+synopsys_exec 
+synopsys_program_name 
+synopsys_root 
+syntax_check 
+syntax_check_status 
+synthetic_library 
+target_library 
+tcl_eval 
+tcl_interactive 
+tcl_library 
+tcl_patchLevel 
+tcl_pkgPath 
+tcl_platform 
+tcl_version 
+tdlout_upcase 
+tell 
+template_naming_style 
+template_parameter_style 
+template_separator_style 
+test_allow_clock_reconvergence 
+test_bsd_allow_tolerable_violations 
+test_bsd_control_cell_drive_limit 
+test_bsd_manufacturer_id 
+test_bsd_optimize_control_cell 
+test_bsd_part_number 
+test_bsd_version_number 
+test_bsdl_default_suffix_name 
+test_bsdl_max_line_length 
+test_capture_clock_skew 
+test_cc_ir_masked_bits 
+test_cc_ir_value_of_masked_bits 
+test_check_port_changes_in_capture 
+test_clock_port_naming_style 
+test_dedicated_subdesign_scan_outs 
+test_default_bidir_delay 
+test_default_delay 
+test_default_min_fault_coverage 
+test_default_period 
+test_default_strobe 
+test_default_strobe_width 
+test_design_analyzer_uses_insert_scan 
+test_dft_drc_ungate_clocks 
+test_dft_drc_ungate_internal_clocks 
+test_disable_find_best_scan_out 
+test_disconnect_non_functional_so 
+test_dont_fix_constraint_violations 
+test_enable_capture_checks 
+test_infer_slave_clock_pulse_after_capture 
+test_isolate_hier_scan_out 
+test_mode_port_inverted_naming_style 
+test_mode_port_naming_style 
+test_mux_constant_si 
+test_non_scan_clock_port_naming_style 
+test_preview_scan_shows_cell_types 
+test_rtldrc_latch_check_style 
+test_scan_clock_a_port_naming_style 
+test_scan_clock_b_port_naming_style 
+test_scan_clock_port_naming_style 
+test_scan_enable_inverted_port_naming_style 
+test_scan_enable_port_naming_style 
+test_scan_in_port_naming_style 
+test_scan_link_so_lockup_key 
+test_scan_link_wire_key 
+test_scan_out_port_naming_style 
+test_scan_segment_key 
+test_scan_true_key 
+test_simulation_library 
+test_stil_max_line_length 
+test_user_defined_instruction_naming_style 
+test_user_test_data_register_naming_style 
+tested_technology 
+testsim_print_stats_file 
+text_editor_command 
+text_print_command 
+then 
+time 
+timing_crpr_remove_clock_to_data_crp 
+timing_crpr_threshold_ps 
+timing_disable_cond_default_arcs 
+timing_disable_data_checks 
+timing_disable_internal_inout_cell_paths 
+timing_disable_internal_inout_net_arcs 
+timing_enable_multiple_clocks_per_reg 
+timing_input_port_clock_shift_one_cycle 
+timing_input_port_default_clock 
+timing_remove_clock_reconvergence_pessimism 
+timing_report_attributes 
+timing_self_loops_no_skew 
+tlu_plus_library 
+tlu_plus_tf_layer_id 
+trace 
+trace_nets 
+translate  -preserve_structure
+true_delay_prove_false_backtrack_limit 
+true_delay_prove_true_backtrack_limit 
+unalias   -all
+ungroup   -start_level -all -simple_names -force -soft -small -prefix -flatten
+uniquify   -dont_skip_empty_designs -cell -reference -force -new_name -base_name
+uniquify_naming_style 
+unschedule 
+unset 
+unset_fpga 
+unset_tlu_plus_files 
+unsuppress_message 
+untrace_nets  -all
+update 
+update_clusters 
+update_lib   -force -permanent -no_warnings -overwrite
+update_script 
+update_timing 
+uplevel 
+upvar 
+use_auto_loop_breaking 
+use_port_name_for_oscs 
+use_test_model   -true -false
+var_mux_mbm 
+variable 
+verbose_messages 
+verilogout_debug_mode 
+verilogout_equation 
+verilogout_higher_designs_first 
+verilogout_ignore_case 
+verilogout_include_files 
+verilogout_levelize 
+verilogout_no_negative_index 
+verilogout_no_tri 
+verilogout_show_unconnected_pins 
+verilogout_single_bit 
+verilogout_unconnected_prefix 
+vhdllib_architecture 
+vhdllib_glitch_handle 
+vhdllib_logic_system 
+vhdllib_logical_name 
+vhdllib_negative_constraint 
+vhdllib_pulse_handle 
+vhdllib_sdf_edge 
+vhdllib_tb_compare 
+vhdllib_tb_x_eq_dontcare 
+vhdllib_timing_checks 
+vhdllib_timing_mesg 
+vhdllib_timing_xgen 
+vhdllib_vital_99 
+vhdlout_architecture_name 
+vhdlout_bit_type 
+vhdlout_bit_type_resolved 
+vhdlout_bit_vector_type 
+vhdlout_conversion_functions 
+vhdlout_debug_mode 
+vhdlout_dont_create_dummy_nets 
+vhdlout_dont_write_types 
+vhdlout_equations 
+vhdlout_follow_vector_direction 
+vhdlout_levelize 
+vhdlout_lower_design_vector 
+vhdlout_one_name 
+vhdlout_package_naming_style 
+vhdlout_preserve_hierarchical_types 
+vhdlout_separate_scan_in 
+vhdlout_single_bit 
+vhdlout_synthesis_off 
+vhdlout_target_simulator 
+vhdlout_three_state_name 
+vhdlout_three_state_res_func 
+vhdlout_time_scale 
+vhdlout_top_configuration_arch_name 
+vhdlout_top_configuration_entity_name 
+vhdlout_top_configuration_name 
+vhdlout_top_design_vector 
+vhdlout_unconnected_pin_prefix 
+vhdlout_unknown_name 
+vhdlout_upcase 
+vhdlout_use_packages 
+vhdlout_wired_and_res_func 
+vhdlout_wired_or_res_func 
+vhdlout_write_architecture 
+vhdlout_write_attributes 
+vhdlout_write_components 
+vhdlout_write_entity 
+vhdlout_write_top_configuration 
+vhdlout_zero_name 
+view_analyze_file_suffix 
+view_arch_types 
+view_background 
+view_cache_images 
+view_command_log_file 
+view_command_win_max_lines 
+view_dialogs_modal 
+view_disable_cursor_warping 
+view_disable_error_windows 
+view_disable_output 
+view_error_window_count 
+view_execute_script_suffix 
+view_info_search_cmd 
+view_log_file 
+view_on_line_doc_cmd 
+view_read_file_suffix 
+view_script_submenu_items 
+view_tools_menu_items 
+view_use_small_cursor 
+view_use_x_routines 
+view_write_file_suffix 
+vwait 
+when_analysis_permitted 
+when_analysis_without_case_analysis 
+which 
+while 
+win_select_objects  -slct_targets -slct_targets_operation -create_slct_buses -tag -root -within -at -radius -again_at
+win_set_filter  -class -filter -layer
+win_set_select_class 
+write   -format -names_file -output -xg_force_db -scenarios -library -compress -donot_expand_dw -modified -no_implicit -hierarchy
+write_bsd_protocol   -output -instruction -out
+write_bsdl   -effort -output -naming_check
+write_clusters  -design -output -no_attributes -hier_cells -new_cells_only
+write_compare_design_script 
+write_compile_script   -format -no_reports -destination -update -absolute_paths -refining -hierarchy
+write_constraints  -output -format -max_paths -nworst -significant_digits -max_path_slack -cover_design -cover_nets -net_priorities -min_net_priority -max_net_priority -low_priorities -max_path_timing -net_timing -load_delay -net_capacitance -subtract_pin_cap -cell_groups -hierarchy -by_input_pin_name -by_output_pin_name -max_nets -from -to -through
+write_design_lib_paths   -dc_setup -filename
+write_designlist  -output
+write_dw_rp_group  -hierarchy -output -all
+write_environment  -suffix  -designs -format -output -cells -constraints_only -environment_only -no_lib_info
+write_file   -format -names_file -output -scenarios -xg_force_db -library -compress -donot_expand_dw -modified -no_implicit -hierarchy
+write_gds  -output -design
+write_ibm_constraints  -hierarchy -full_path_lib_names -output -ignored_file
+write_layout_scan  -output -noclockdomain
+write_lib   -format -names_file -mw_oc_type -output -macro_only -compress -mw_ref_lib
+write_link_library  -nosplit -output -full_path_lib_names -target
+write_makefile   -format -target -bsubargs -dependencies -destination -update -absolute_paths -lsf
+write_mdb  -output -cell_name -overwrite -enforce_scaling
+write_milkyway  -output -overwrite -scenario
+write_name_mapping_nowarn_libraries 
+write_name_nets_same_as_ports 
+write_ncf 
+write_par_constraint  -formality
+write_parasitics   -format -min -output -script -ratio
+write_partition   -format -type -destination -hierarchy
+write_partition_constraints   -format -destination -update -hierarchy
+write_physical_script   -output -nosplit -mpc
+write_routing_pairwise_isolations  -dir
+write_rp_group  -nosplit -quiet -hierarchy -create -leaf -keepout -instance -include -all -output
+write_rtl  -format -output -use_packages -include_files -simulation -debug_mode -rtl_script -ignore_rtl_processes
+write_rtl_load   -format -output
+write_saif   -output -exclude_sdpd -instances -rtl -no_hier -propagated
+write_scan_def   -output
+write_script   -no_annotated_check -format -output -include -full_path_lib_names -nosplit -no_cg -no_annotated_delay -hierarchy
+write_sdc   -version -nosplit
+write_sdc_output_lumped_net_capacitance 
+write_sdf   -version -instance -significant_digits
+write_test   -format -revision -parallel -output -input -pattern_exec -test_mode -test_bench_environment -part_number -cumulative -first
+write_test_formats 
+write_test_include_scan_cell_info 
+write_test_input_dont_care_value 
+write_test_max_cycles 
+write_test_max_scan_patterns 
+write_test_model  -inclusive  -design -format -output -names
+write_test_pattern_set_naming_style 
+write_test_protocol   -output -pll_bypass -test_mode -names
+write_test_round_timing_values 
+write_test_scan_check_file_naming_style 
+write_test_vector_file_naming_style 
+write_test_vhdlout 
+write_testsim_lib   -depends
+x11_set_cursor_background 
+x11_set_cursor_foreground 
+x11_set_cursor_number 
+xnfin_dff_clock_enable_pin_name 
+xnfin_dff_clock_pin_name 
+xnfin_dff_data_pin_name 
+xnfin_dff_q_pin_name 
+xnfin_dff_reset_pin_name 
+xnfin_dff_set_pin_name 
+xnfin_family 
+xnfin_ignore_pins 
+xnfout_clock_attribute_style 
+xnfout_constraints_per_endpoint 
+xnfout_default_time_constraints 
+xnfout_library_version 
+xterm_executable 
