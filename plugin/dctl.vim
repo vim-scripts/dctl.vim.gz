@@ -4,7 +4,7 @@
 " Language:	DesignCompiler/TCL
 " Maintainer:	Paul Zimmer <paulzimmer@zimmerdesignservices.com>
 " Original:	Paul Zimmer <paulzimmer@zimmerdesignservices.com>
-" Version:	6.22 (synched to tcl.vim v6.1), Sun Jul  2 21:37:35 CDT 2006
+" Version:	6.3 (synched to tcl.vim v6.1), Thu Jul 20 00:46:17 CDT 2006
 "
 "
 
@@ -835,10 +835,6 @@ syn region tcltkCommand matchgroup=tcltkCommandColor start="\<current_instance\>
 
 syn region tcltkCommand matchgroup=tcltkCommandColor start="\<current_test_mode\>" matchgroup=NONE skip="^\s*$" end="]\|[^\\]$"me=e,he=e-1 contains=@dctlcontainscluster
 
-syn keyword dctlde_rp_groups contained -appe[nd] -appl[y] -g[roup_name] -n[osplit] -o[utput] 
-HiLink dctlde_rp_groups Special
-syn region tcltkCommand matchgroup=tcltkCommandColor start="\<de_rp_groups\>" matchgroup=NONE skip="^\s*$" end="]\|[^\\]$"me=e,he=e-1 contains=@dctlcontainscluster,dctlde_rp_groups
-
 syn region tcltkCommand matchgroup=tcltkCommandColor start="\<date\>" matchgroup=NONE skip="^\s*$" end="]\|[^\\]$"me=e,he=e-1 contains=@dctlcontainscluster
 
 syn region tcltkCommand matchgroup=tcltkCommandColor start="\<db_load_ccs_data\>" matchgroup=NONE skip="^\s*$" end="]\|[^\\]$"me=e,he=e-1 contains=@dctlcontainscluster
@@ -852,6 +848,10 @@ syn region tcltkCommand matchgroup=tcltkCommandColor start="\<dc_shell_mode\>" m
 syn region tcltkCommand matchgroup=tcltkCommandColor start="\<ddc_allow_unknown_packed_commands\>" matchgroup=NONE skip="^\s*$" end="]\|[^\\]$"me=e,he=e-1 contains=@dctlcontainscluster
 
 syn region tcltkCommand matchgroup=tcltkCommandColor start="\<ddc_verbose\>" matchgroup=NONE skip="^\s*$" end="]\|[^\\]$"me=e,he=e-1 contains=@dctlcontainscluster
+
+syn keyword dctlde_rp_groups contained -appe[nd] -appl[y] -g[roup_name] -n[osplit] -o[utput] 
+HiLink dctlde_rp_groups Special
+syn region tcltkCommand matchgroup=tcltkCommandColor start="\<de_rp_groups\>" matchgroup=NONE skip="^\s*$" end="]\|[^\\]$"me=e,he=e-1 contains=@dctlcontainscluster,dctlde_rp_groups
 
 syn region tcltkCommand matchgroup=tcltkCommandColor start="\<debug_script\>" matchgroup=NONE skip="^\s*$" end="]\|[^\\]$"me=e,he=e-1 contains=@dctlcontainscluster
 

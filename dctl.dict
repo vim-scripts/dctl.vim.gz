@@ -4,7 +4,7 @@
 " Language:	DesignCompiler/TCL
 " Maintainer:	Paul Zimmer <paulzimmer@zimmerdesignservices.com>
 " Original:	Paul Zimmer <paulzimmer@zimmerdesignservices.com>
-" Version:	6.22 (synched to tcl.vim v6.1), Sun Jul  2 21:37:35 CDT 2006
+" Version:	6.3 (synched to tcl.vim v6.1), Thu Jul 20 00:46:17 CDT 2006
 "
 "
 
@@ -281,13 +281,13 @@ current_design
 current_design_name 
 current_instance 
 current_test_mode 
-de_rp_groups  -group_name -output -append -nosplit -apply
 date 
 db_load_ccs_data 
 dc_allocate_budgets   -min_input_to_register -levels -format -min_input_to_output -min_register_to_output -no_interblock_logic -separator -write_script -file_format_spec -budget_design_ware -mode
 dc_shell_mode 
 ddc_allow_unknown_packed_commands 
 ddc_verbose 
+de_rp_groups  -group_name -output -append -nosplit -apply
 debug_script 
 default_input_delay 
 default_name_rules 
